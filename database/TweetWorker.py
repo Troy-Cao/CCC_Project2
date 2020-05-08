@@ -4,7 +4,26 @@ import datetime
 import time
 import json
 import sys
-from tweepy import OAuthHandler, API
+from tweepy import OAuthHandler, API, Stream, StreamListener
+
+class MyStreamListener(StreamListener):
+    def __init__(self, queue):
+        super().__init__()
+        self.queue = queue
+        
+    def on_status(self, status):
+        print("Status ID = ",status._json['id'])
+        print(status.text, '\n')
+        self.queue.put(status._json)
+        
+    def on_error(self, status_code):
+        if status_code == 420:
+            #returning False in on_error disconnects the stream
+            return False
+
+        # returning non-False reconnects the stream, with backoff.
+
+    
 
 class TweetWorker:
     # OAuth
@@ -19,9 +38,9 @@ class TweetWorker:
         self.log('\n'*2 + "="*110)
         self.log("\n__Initialized__ @" + time.asctime(time.gmtime()) + "\n")
         self.log("="*110 + '\n'*2)
-        auth = OAuthHandler(self.__consumer_key, self.__consumer_secret)
-        auth.set_access_token(self.__access_token, self.__access_token_secret)
-        self.api = API(auth)#, wait_on_rate_limit=True, wait_on_rate_limit_notify=True) 
+        self.auth = OAuthHandler(self.__consumer_key, self.__consumer_secret)
+        self.auth.set_access_token(self.__access_token, self.__access_token_secret)
+        self.api = API(self.auth)#, wait_on_rate_limit=True, wait_on_rate_limit_notify=True) 
             # TODO: test if auto waits and resumes
         
         self.last_min_id = None
@@ -115,8 +134,9 @@ class TweetWorker:
                       count=100,
                       max_id = self.last_min_id,
                       result_type = 'recent',
+                      geocode = "-37.827024,144.955603,45mi",  # Melbourne
                       lang = 'en' )
-                      # geocode = "-37.827024, 144.955603, 45mi"  # Melbourne
+                      
         
         # Update last_min_id for next round of search as 'max_id'.
         self.last_min_id = result_status[-1]._json['id']
@@ -213,7 +233,14 @@ class TweetWorker:
 
         return 0  # Flag (Result found)
 
-    def run_stream(self, queue):
-        
+    def run_stream(self, query):
+        myStreamListener = MyStreamListener(self.queue)
+        myStream = Stream(auth=self.auth, listener=myStreamListener)
+
+        # locations = [ -38.507844, 143.990289, -37.508239, 145.539724] # Melbourne
+        # locations = [ -37.908176, 113.554978, -12.317801, 153.534874] # Australia
+        locations = None
+        myStream.filter(track=[query], languages=['en'], is_async=True, locations=locations)
+
 
         return

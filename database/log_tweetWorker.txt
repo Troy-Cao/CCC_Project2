@@ -56079,3 +56079,1760 @@ On status #: 98 of round #: 4
   -- id: 1258576387771777024 | -- date: Fri May 08 01:56:08 +0000 2020
 On status #: 99 of round #: 4
   -- id: 1258576383757844480 | -- date: Fri May 08 01:56:07 +0000 2020
+
+
+==============================================================================================================
+
+__Initialized__ @Fri May  8 06:58:02 2020
+
+==============================================================================================================
+
+
+[get_latest_tweet_id] Request Count: 1
+[get_latest_tweet_id] Getting the latest 
+[MAIN RUN] last_max_id: 1258652359384653829
+[MAIN RUN] Current round: 0
+[search_tweets] Request Count: 2
+On status #: 0 of round #: 1
+  |--id: 1258652359384653829 |--date: Fri May 08 06:58:01 +0000 2020
+On status #: 1 of round #: 1
+  |--id: 1258652352745074689 |--date: Fri May 08 06:58:00 +0000 2020
+On status #: 2 of round #: 1
+  |--id: 1258652347640745985 |--date: Fri May 08 06:57:58 +0000 2020
+On status #: 3 of round #: 1
+  |--id: 1258652347611385857 |--date: Fri May 08 06:57:58 +0000 2020
+On status #: 4 of round #: 1
+  |--id: 1258652347477213184 |--date: Fri May 08 06:57:58 +0000 2020
+On status #: 5 of round #: 1
+  |--id: 1258652346940182528 |--date: Fri May 08 06:57:58 +0000 2020
+On status #: 6 of round #: 1
+  |--id: 1258652337016635392 |--date: Fri May 08 06:57:56 +0000 2020
+On status #: 7 of round #: 1
+  |--id: 1258652336987258882 |--date: Fri May 08 06:57:56 +0000 2020
+On status #: 8 of round #: 1
+  |--id: 1258652335997243400 |--date: Fri May 08 06:57:56 +0000 2020
+On status #: 9 of round #: 1
+  |--id: 1258652329370361856 |--date: Fri May 08 06:57:54 +0000 2020
+On status #: 10 of round #: 1
+  |--id: 1258652325129998336 |--date: Fri May 08 06:57:53 +0000 2020
+On status #: 11 of round #: 1
+  |--id: 1258652323041161217 |--date: Fri May 08 06:57:53 +0000 2020
+On status #: 12 of round #: 1
+  |--id: 1258652322684698625 |--date: Fri May 08 06:57:53 +0000 2020
+On status #: 13 of round #: 1
+  |--id: 1258652318809153537 |--date: Fri May 08 06:57:52 +0000 2020
+On status #: 14 of round #: 1
+  |--id: 1258652313767620609 |--date: Fri May 08 06:57:50 +0000 2020
+On status #: 15 of round #: 1
+  |--id: 1258652313444630528 |--date: Fri May 08 06:57:50 +0000 2020
+On status #: 16 of round #: 1
+  |--id: 1258652311737585664 |--date: Fri May 08 06:57:50 +0000 2020
+On status #: 17 of round #: 1
+  |--id: 1258652310093197312 |--date: Fri May 08 06:57:50 +0000 2020
+On status #: 18 of round #: 1
+  |--id: 1258652309183016961 |--date: Fri May 08 06:57:49 +0000 2020
+On status #: 19 of round #: 1
+  |--id: 1258652306339360769 |--date: Fri May 08 06:57:49 +0000 2020
+On status #: 20 of round #: 1
+  |--id: 1258652301734154245 |--date: Fri May 08 06:57:48 +0000 2020
+On status #: 21 of round #: 1
+  |--id: 1258652300832194560 |--date: Fri May 08 06:57:47 +0000 2020
+On status #: 22 of round #: 1
+  |--id: 1258652299439640576 |--date: Fri May 08 06:57:47 +0000 2020
+On status #: 23 of round #: 1
+  |--id: 1258652298361933825 |--date: Fri May 08 06:57:47 +0000 2020
+On status #: 24 of round #: 1
+  |--id: 1258652295253778435 |--date: Fri May 08 06:57:46 +0000 2020
+On status #: 25 of round #: 1
+  |--id: 1258652294868078592 |--date: Fri May 08 06:57:46 +0000 2020
+On status #: 26 of round #: 1
+  |--id: 1258652293332783105 |--date: Fri May 08 06:57:46 +0000 2020
+On status #: 27 of round #: 1
+  |--id: 1258652286068219904 |--date: Fri May 08 06:57:44 +0000 2020
+On status #: 28 of round #: 1
+  |--id: 1258652281362317312 |--date: Fri May 08 06:57:43 +0000 2020
+On status #: 29 of round #: 1
+  |--id: 1258652279793692672 |--date: Fri May 08 06:57:42 +0000 2020
+On status #: 30 of round #: 1
+  |--id: 1258652279336386561 |--date: Fri May 08 06:57:42 +0000 2020
+On status #: 31 of round #: 1
+  |--id: 1258652266514579456 |--date: Fri May 08 06:57:39 +0000 2020
+On status #: 32 of round #: 1
+  |--id: 1258652261300891649 |--date: Fri May 08 06:57:38 +0000 2020
+On status #: 33 of round #: 1
+  |--id: 1258652257656037376 |--date: Fri May 08 06:57:37 +0000 2020
+On status #: 34 of round #: 1
+  |--id: 1258652255659495424 |--date: Fri May 08 06:57:37 +0000 2020
+On status #: 35 of round #: 1
+  |--id: 1258652255412199426 |--date: Fri May 08 06:57:36 +0000 2020
+On status #: 36 of round #: 1
+  |--id: 1258652251121283073 |--date: Fri May 08 06:57:35 +0000 2020
+On status #: 37 of round #: 1
+  |--id: 1258652249380683784 |--date: Fri May 08 06:57:35 +0000 2020
+On status #: 38 of round #: 1
+  |--id: 1258652246935400448 |--date: Fri May 08 06:57:34 +0000 2020
+On status #: 39 of round #: 1
+  |--id: 1258652241608704000 |--date: Fri May 08 06:57:33 +0000 2020
+On status #: 40 of round #: 1
+  |--id: 1258652239226212352 |--date: Fri May 08 06:57:33 +0000 2020
+On status #: 41 of round #: 1
+  |--id: 1258652233585041408 |--date: Fri May 08 06:57:31 +0000 2020
+On status #: 42 of round #: 1
+  |--id: 1258652230770552832 |--date: Fri May 08 06:57:31 +0000 2020
+On status #: 43 of round #: 1
+  |--id: 1258652228262473731 |--date: Fri May 08 06:57:30 +0000 2020
+On status #: 44 of round #: 1
+  |--id: 1258652228245762053 |--date: Fri May 08 06:57:30 +0000 2020
+On status #: 45 of round #: 1
+  |--id: 1258652223833165824 |--date: Fri May 08 06:57:29 +0000 2020
+On status #: 46 of round #: 1
+  |--id: 1258652222541398016 |--date: Fri May 08 06:57:29 +0000 2020
+On status #: 47 of round #: 1
+  |--id: 1258652215293513728 |--date: Fri May 08 06:57:27 +0000 2020
+On status #: 48 of round #: 1
+  |--id: 1258652213271879680 |--date: Fri May 08 06:57:26 +0000 2020
+On status #: 49 of round #: 1
+  |--id: 1258652206955401216 |--date: Fri May 08 06:57:25 +0000 2020
+On status #: 50 of round #: 1
+  |--id: 1258652203813703680 |--date: Fri May 08 06:57:24 +0000 2020
+On status #: 51 of round #: 1
+  |--id: 1258652199007031297 |--date: Fri May 08 06:57:23 +0000 2020
+On status #: 52 of round #: 1
+  |--id: 1258652196641681409 |--date: Fri May 08 06:57:22 +0000 2020
+On status #: 53 of round #: 1
+  |--id: 1258652191524560897 |--date: Fri May 08 06:57:21 +0000 2020
+On status #: 54 of round #: 1
+  |--id: 1258652190693928962 |--date: Fri May 08 06:57:21 +0000 2020
+On status #: 55 of round #: 1
+  |--id: 1258652190622638080 |--date: Fri May 08 06:57:21 +0000 2020
+On status #: 56 of round #: 1
+  |--id: 1258652189133869056 |--date: Fri May 08 06:57:21 +0000 2020
+On status #: 57 of round #: 1
+  |--id: 1258652185644105729 |--date: Fri May 08 06:57:20 +0000 2020
+On status #: 58 of round #: 1
+  |--id: 1258652178572627969 |--date: Fri May 08 06:57:18 +0000 2020
+On status #: 59 of round #: 1
+  |--id: 1258652170934792193 |--date: Fri May 08 06:57:16 +0000 2020
+On status #: 60 of round #: 1
+  |--id: 1258652169026355202 |--date: Fri May 08 06:57:16 +0000 2020
+On status #: 61 of round #: 1
+  |--id: 1258652167218528257 |--date: Fri May 08 06:57:15 +0000 2020
+On status #: 62 of round #: 1
+  |--id: 1258652161249955840 |--date: Fri May 08 06:57:14 +0000 2020
+On status #: 63 of round #: 1
+  |--id: 1258652154694209539 |--date: Fri May 08 06:57:12 +0000 2020
+On status #: 64 of round #: 1
+  |--id: 1258652154182553605 |--date: Fri May 08 06:57:12 +0000 2020
+On status #: 65 of round #: 1
+  |--id: 1258652153431941120 |--date: Fri May 08 06:57:12 +0000 2020
+On status #: 66 of round #: 1
+  |--id: 1258652148264558592 |--date: Fri May 08 06:57:11 +0000 2020
+On status #: 67 of round #: 1
+  |--id: 1258652139909296128 |--date: Fri May 08 06:57:09 +0000 2020
+On status #: 68 of round #: 1
+  |--id: 1258652132884000770 |--date: Fri May 08 06:57:07 +0000 2020
+On status #: 69 of round #: 1
+  |--id: 1258652132540112896 |--date: Fri May 08 06:57:07 +0000 2020
+On status #: 70 of round #: 1
+  |--id: 1258652127230132229 |--date: Fri May 08 06:57:06 +0000 2020
+On status #: 71 of round #: 1
+  |--id: 1258652123199406080 |--date: Fri May 08 06:57:05 +0000 2020
+On status #: 72 of round #: 1
+  |--id: 1258652122327011329 |--date: Fri May 08 06:57:05 +0000 2020
+On status #: 73 of round #: 1
+  |--id: 1258652122041798658 |--date: Fri May 08 06:57:05 +0000 2020
+On status #: 74 of round #: 1
+  |--id: 1258652119462105088 |--date: Fri May 08 06:57:04 +0000 2020
+On status #: 75 of round #: 1
+  |--id: 1258652118971568129 |--date: Fri May 08 06:57:04 +0000 2020
+On status #: 76 of round #: 1
+  |--id: 1258652115452346368 |--date: Fri May 08 06:57:03 +0000 2020
+On status #: 77 of round #: 1
+  |--id: 1258652113728487426 |--date: Fri May 08 06:57:03 +0000 2020
+On status #: 78 of round #: 1
+  |--id: 1258652110561751041 |--date: Fri May 08 06:57:02 +0000 2020
+On status #: 79 of round #: 1
+  |--id: 1258652110364631041 |--date: Fri May 08 06:57:02 +0000 2020
+On status #: 80 of round #: 1
+  |--id: 1258652103142146050 |--date: Fri May 08 06:57:00 +0000 2020
+On status #: 81 of round #: 1
+  |--id: 1258652099585269760 |--date: Fri May 08 06:56:59 +0000 2020
+On status #: 82 of round #: 1
+  |--id: 1258652095495847939 |--date: Fri May 08 06:56:58 +0000 2020
+On status #: 83 of round #: 1
+  |--id: 1258652093105258496 |--date: Fri May 08 06:56:58 +0000 2020
+On status #: 84 of round #: 1
+  |--id: 1258652085467222016 |--date: Fri May 08 06:56:56 +0000 2020
+On status #: 85 of round #: 1
+  |--id: 1258652084963913729 |--date: Fri May 08 06:56:56 +0000 2020
+On status #: 86 of round #: 1
+  |--id: 1258652082866970624 |--date: Fri May 08 06:56:55 +0000 2020
+On status #: 87 of round #: 1
+  |--id: 1258652082250280962 |--date: Fri May 08 06:56:55 +0000 2020
+On status #: 88 of round #: 1
+  |--id: 1258652080614461440 |--date: Fri May 08 06:56:55 +0000 2020
+On status #: 89 of round #: 1
+  |--id: 1258652074868260864 |--date: Fri May 08 06:56:53 +0000 2020
+On status #: 90 of round #: 1
+  |--id: 1258652072309927936 |--date: Fri May 08 06:56:53 +0000 2020
+On status #: 91 of round #: 1
+  |--id: 1258652070820950016 |--date: Fri May 08 06:56:52 +0000 2020
+On status #: 92 of round #: 1
+  |--id: 1258652067054235648 |--date: Fri May 08 06:56:52 +0000 2020
+On status #: 93 of round #: 1
+  |--id: 1258652063640121345 |--date: Fri May 08 06:56:51 +0000 2020
+On status #: 94 of round #: 1
+  |--id: 1258652063237435392 |--date: Fri May 08 06:56:51 +0000 2020
+On status #: 95 of round #: 1
+  |--id: 1258652060863672327 |--date: Fri May 08 06:56:50 +0000 2020
+On status #: 96 of round #: 1
+  |--id: 1258652059714215936 |--date: Fri May 08 06:56:50 +0000 2020
+On status #: 97 of round #: 1
+  |--id: 1258652051430498304 |--date: Fri May 08 06:56:48 +0000 2020
+On status #: 98 of round #: 1
+  |--id: 1258652051313233920 |--date: Fri May 08 06:56:48 +0000 2020
+On status #: 99 of round #: 1
+  |--id: 1258652046728847360 |--date: Fri May 08 06:56:47 +0000 2020
+[MAIN RUN] Current round: 1
+[search_tweets] Request Count: 3
+On status #: 0 of round #: 2
+  |--id: 1258652046728847360 |--date: Fri May 08 06:56:47 +0000 2020
+On status #: 1 of round #: 2
+  |--id: 1258652046191988736 |--date: Fri May 08 06:56:47 +0000 2020
+On status #: 2 of round #: 2
+  |--id: 1258652045940228096 |--date: Fri May 08 06:56:47 +0000 2020
+On status #: 3 of round #: 2
+  |--id: 1258652045051133952 |--date: Fri May 08 06:56:46 +0000 2020
+On status #: 4 of round #: 2
+  |--id: 1258652043838775297 |--date: Fri May 08 06:56:46 +0000 2020
+On status #: 5 of round #: 2
+  |--id: 1258652042458836993 |--date: Fri May 08 06:56:46 +0000 2020
+On status #: 6 of round #: 2
+  |--id: 1258652040886022144 |--date: Fri May 08 06:56:45 +0000 2020
+On status #: 7 of round #: 2
+  |--id: 1258652033151885313 |--date: Fri May 08 06:56:43 +0000 2020
+On status #: 8 of round #: 2
+  |--id: 1258652022972264449 |--date: Fri May 08 06:56:41 +0000 2020
+On status #: 9 of round #: 2
+  |--id: 1258652021600727040 |--date: Fri May 08 06:56:41 +0000 2020
+On status #: 10 of round #: 2
+  |--id: 1258652016420798464 |--date: Fri May 08 06:56:39 +0000 2020
+On status #: 11 of round #: 2
+  |--id: 1258652016022347776 |--date: Fri May 08 06:56:39 +0000 2020
+On status #: 12 of round #: 2
+  |--id: 1258652006123597826 |--date: Fri May 08 06:56:37 +0000 2020
+On status #: 13 of round #: 2
+  |--id: 1258651986255216641 |--date: Fri May 08 06:56:32 +0000 2020
+On status #: 14 of round #: 2
+  |--id: 1258651985655595008 |--date: Fri May 08 06:56:32 +0000 2020
+On status #: 15 of round #: 2
+  |--id: 1258651982602043393 |--date: Fri May 08 06:56:31 +0000 2020
+On status #: 16 of round #: 2
+  |--id: 1258651978126839809 |--date: Fri May 08 06:56:30 +0000 2020
+On status #: 17 of round #: 2
+  |--id: 1258651958283341824 |--date: Fri May 08 06:56:26 +0000 2020
+On status #: 18 of round #: 2
+  |--id: 1258651954823278592 |--date: Fri May 08 06:56:25 +0000 2020
+On status #: 19 of round #: 2
+  |--id: 1258651952675557377 |--date: Fri May 08 06:56:24 +0000 2020
+On status #: 20 of round #: 2
+  |--id: 1258651947311259649 |--date: Fri May 08 06:56:23 +0000 2020
+On status #: 21 of round #: 2
+  |--id: 1258651936896794624 |--date: Fri May 08 06:56:21 +0000 2020
+On status #: 22 of round #: 2
+  |--id: 1258651925811048449 |--date: Fri May 08 06:56:18 +0000 2020
+On status #: 23 of round #: 2
+  |--id: 1258651917611421696 |--date: Fri May 08 06:56:16 +0000 2020
+On status #: 24 of round #: 2
+  |--id: 1258651913920245761 |--date: Fri May 08 06:56:15 +0000 2020
+On status #: 25 of round #: 2
+  |--id: 1258651903048761344 |--date: Fri May 08 06:56:12 +0000 2020
+On status #: 26 of round #: 2
+  |--id: 1258651900993343489 |--date: Fri May 08 06:56:12 +0000 2020
+On status #: 27 of round #: 2
+  |--id: 1258651900276289537 |--date: Fri May 08 06:56:12 +0000 2020
+On status #: 28 of round #: 2
+  |--id: 1258651898481164289 |--date: Fri May 08 06:56:11 +0000 2020
+On status #: 29 of round #: 2
+  |--id: 1258651890289647617 |--date: Fri May 08 06:56:09 +0000 2020
+On status #: 30 of round #: 2
+  |--id: 1258651888234291201 |--date: Fri May 08 06:56:09 +0000 2020
+On status #: 31 of round #: 2
+  |--id: 1258651879740977154 |--date: Fri May 08 06:56:07 +0000 2020
+On status #: 32 of round #: 2
+  |--id: 1258651877048233984 |--date: Fri May 08 06:56:06 +0000 2020
+On status #: 33 of round #: 2
+  |--id: 1258651874544189442 |--date: Fri May 08 06:56:06 +0000 2020
+On status #: 34 of round #: 2
+  |--id: 1258651874011602945 |--date: Fri May 08 06:56:06 +0000 2020
+On status #: 35 of round #: 2
+  |--id: 1258651868055482373 |--date: Fri May 08 06:56:04 +0000 2020
+On status #: 36 of round #: 2
+  |--id: 1258651866503606274 |--date: Fri May 08 06:56:04 +0000 2020
+On status #: 37 of round #: 2
+  |--id: 1258651863056109569 |--date: Fri May 08 06:56:03 +0000 2020
+On status #: 38 of round #: 2
+  |--id: 1258651855527178242 |--date: Fri May 08 06:56:01 +0000 2020
+On status #: 39 of round #: 2
+  |--id: 1258651848132698112 |--date: Fri May 08 06:55:59 +0000 2020
+On status #: 40 of round #: 2
+  |--id: 1258651845108498432 |--date: Fri May 08 06:55:59 +0000 2020
+On status #: 41 of round #: 2
+  |--id: 1258651844475117569 |--date: Fri May 08 06:55:59 +0000 2020
+On status #: 42 of round #: 2
+  |--id: 1258651839387631616 |--date: Fri May 08 06:55:57 +0000 2020
+On status #: 43 of round #: 2
+  |--id: 1258651831779028992 |--date: Fri May 08 06:55:55 +0000 2020
+On status #: 44 of round #: 2
+  |--id: 1258651830327934977 |--date: Fri May 08 06:55:55 +0000 2020
+On status #: 45 of round #: 2
+  |--id: 1258651829652451328 |--date: Fri May 08 06:55:55 +0000 2020
+On status #: 46 of round #: 2
+  |--id: 1258651818067996672 |--date: Fri May 08 06:55:52 +0000 2020
+On status #: 47 of round #: 2
+  |--id: 1258651813085052929 |--date: Fri May 08 06:55:51 +0000 2020
+On status #: 48 of round #: 2
+  |--id: 1258651812825042945 |--date: Fri May 08 06:55:51 +0000 2020
+On status #: 49 of round #: 2
+  |--id: 1258651809364815872 |--date: Fri May 08 06:55:50 +0000 2020
+On status #: 50 of round #: 2
+  |--id: 1258651808945319936 |--date: Fri May 08 06:55:50 +0000 2020
+On status #: 51 of round #: 2
+  |--id: 1258651807254843392 |--date: Fri May 08 06:55:50 +0000 2020
+On status #: 52 of round #: 2
+  |--id: 1258651807213072385 |--date: Fri May 08 06:55:50 +0000 2020
+On status #: 53 of round #: 2
+  |--id: 1258651799948365824 |--date: Fri May 08 06:55:48 +0000 2020
+On status #: 54 of round #: 2
+  |--id: 1258651797519925249 |--date: Fri May 08 06:55:47 +0000 2020
+On status #: 55 of round #: 2
+  |--id: 1258651796337197057 |--date: Fri May 08 06:55:47 +0000 2020
+On status #: 56 of round #: 2
+  |--id: 1258651794470813696 |--date: Fri May 08 06:55:47 +0000 2020
+On status #: 57 of round #: 2
+  |--id: 1258651787671683075 |--date: Fri May 08 06:55:45 +0000 2020
+On status #: 58 of round #: 2
+  |--id: 1258651785394294787 |--date: Fri May 08 06:55:44 +0000 2020
+On status #: 59 of round #: 2
+  |--id: 1258651781665452032 |--date: Fri May 08 06:55:44 +0000 2020
+On status #: 60 of round #: 2
+  |--id: 1258651771850813440 |--date: Fri May 08 06:55:41 +0000 2020
+On status #: 61 of round #: 2
+  |--id: 1258651769565073408 |--date: Fri May 08 06:55:41 +0000 2020
+On status #: 62 of round #: 2
+  |--id: 1258651766603886594 |--date: Fri May 08 06:55:40 +0000 2020
+On status #: 63 of round #: 2
+  |--id: 1258651764817121280 |--date: Fri May 08 06:55:40 +0000 2020
+On status #: 64 of round #: 2
+  |--id: 1258651764791881730 |--date: Fri May 08 06:55:40 +0000 2020
+On status #: 65 of round #: 2
+  |--id: 1258651759767150592 |--date: Fri May 08 06:55:38 +0000 2020
+On status #: 66 of round #: 2
+  |--id: 1258651759003623424 |--date: Fri May 08 06:55:38 +0000 2020
+On status #: 67 of round #: 2
+  |--id: 1258651754301927425 |--date: Fri May 08 06:55:37 +0000 2020
+On status #: 68 of round #: 2
+  |--id: 1258651736702509056 |--date: Fri May 08 06:55:33 +0000 2020
+On status #: 69 of round #: 2
+  |--id: 1258651736694157313 |--date: Fri May 08 06:55:33 +0000 2020
+On status #: 70 of round #: 2
+  |--id: 1258651731535302656 |--date: Fri May 08 06:55:32 +0000 2020
+On status #: 71 of round #: 2
+  |--id: 1258651729299636224 |--date: Fri May 08 06:55:31 +0000 2020
+On status #: 72 of round #: 2
+  |--id: 1258651722081284097 |--date: Fri May 08 06:55:29 +0000 2020
+On status #: 73 of round #: 2
+  |--id: 1258651721649324032 |--date: Fri May 08 06:55:29 +0000 2020
+On status #: 74 of round #: 2
+  |--id: 1258651717702496256 |--date: Fri May 08 06:55:28 +0000 2020
+On status #: 75 of round #: 2
+  |--id: 1258651715349471232 |--date: Fri May 08 06:55:28 +0000 2020
+On status #: 76 of round #: 2
+  |--id: 1258651713478832128 |--date: Fri May 08 06:55:27 +0000 2020
+On status #: 77 of round #: 2
+  |--id: 1258651709104062464 |--date: Fri May 08 06:55:26 +0000 2020
+On status #: 78 of round #: 2
+  |--id: 1258651708487602176 |--date: Fri May 08 06:55:26 +0000 2020
+On status #: 79 of round #: 2
+  |--id: 1258651707212472320 |--date: Fri May 08 06:55:26 +0000 2020
+On status #: 80 of round #: 2
+  |--id: 1258651697838084096 |--date: Fri May 08 06:55:24 +0000 2020
+On status #: 81 of round #: 2
+  |--id: 1258651692310167552 |--date: Fri May 08 06:55:22 +0000 2020
+On status #: 82 of round #: 2
+  |--id: 1258651687742365696 |--date: Fri May 08 06:55:21 +0000 2020
+On status #: 83 of round #: 2
+  |--id: 1258651680205271040 |--date: Fri May 08 06:55:19 +0000 2020
+On status #: 84 of round #: 2
+  |--id: 1258651679542644736 |--date: Fri May 08 06:55:19 +0000 2020
+On status #: 85 of round #: 2
+  |--id: 1258651678087303169 |--date: Fri May 08 06:55:19 +0000 2020
+On status #: 86 of round #: 2
+  |--id: 1258651677818646528 |--date: Fri May 08 06:55:19 +0000 2020
+On status #: 87 of round #: 2
+  |--id: 1258651667433525248 |--date: Fri May 08 06:55:16 +0000 2020
+On status #: 88 of round #: 2
+  |--id: 1258651664761925633 |--date: Fri May 08 06:55:16 +0000 2020
+On status #: 89 of round #: 2
+  |--id: 1258651653873340417 |--date: Fri May 08 06:55:13 +0000 2020
+On status #: 90 of round #: 2
+  |--id: 1258651653428981760 |--date: Fri May 08 06:55:13 +0000 2020
+On status #: 91 of round #: 2
+  |--id: 1258651652531392513 |--date: Fri May 08 06:55:13 +0000 2020
+On status #: 92 of round #: 2
+  |--id: 1258651650664747009 |--date: Fri May 08 06:55:12 +0000 2020
+On status #: 93 of round #: 2
+  |--id: 1258651649243037696 |--date: Fri May 08 06:55:12 +0000 2020
+On status #: 94 of round #: 2
+  |--id: 1258651648794038273 |--date: Fri May 08 06:55:12 +0000 2020
+On status #: 95 of round #: 2
+  |--id: 1258651648324333569 |--date: Fri May 08 06:55:12 +0000 2020
+On status #: 96 of round #: 2
+  |--id: 1258651647410147329 |--date: Fri May 08 06:55:12 +0000 2020
+On status #: 97 of round #: 2
+  |--id: 1258651647175274496 |--date: Fri May 08 06:55:11 +0000 2020
+On status #: 98 of round #: 2
+  |--id: 1258651644490735617 |--date: Fri May 08 06:55:11 +0000 2020
+On status #: 99 of round #: 2
+  |--id: 1258651638861971467 |--date: Fri May 08 06:55:09 +0000 2020
+[MAIN RUN] Current round: 2
+[search_tweets] Request Count: 4
+On status #: 0 of round #: 3
+  |--id: 1258651638861971467 |--date: Fri May 08 06:55:09 +0000 2020
+On status #: 1 of round #: 3
+  |--id: 1258651638492995589 |--date: Fri May 08 06:55:09 +0000 2020
+On status #: 2 of round #: 3
+  |--id: 1258651636093902850 |--date: Fri May 08 06:55:09 +0000 2020
+On status #: 3 of round #: 3
+  |--id: 1258651624643444736 |--date: Fri May 08 06:55:06 +0000 2020
+On status #: 4 of round #: 3
+  |--id: 1258651605076971521 |--date: Fri May 08 06:55:01 +0000 2020
+On status #: 5 of round #: 3
+  |--id: 1258651604317700097 |--date: Fri May 08 06:55:01 +0000 2020
+On status #: 6 of round #: 3
+  |--id: 1258651603361337345 |--date: Fri May 08 06:55:01 +0000 2020
+On status #: 7 of round #: 3
+  |--id: 1258651595941740544 |--date: Fri May 08 06:54:59 +0000 2020
+On status #: 8 of round #: 3
+  |--id: 1258651585208627200 |--date: Fri May 08 06:54:57 +0000 2020
+On status #: 9 of round #: 3
+  |--id: 1258651584008839168 |--date: Fri May 08 06:54:56 +0000 2020
+On status #: 10 of round #: 3
+  |--id: 1258651581546782720 |--date: Fri May 08 06:54:56 +0000 2020
+On status #: 11 of round #: 3
+  |--id: 1258651580426940417 |--date: Fri May 08 06:54:56 +0000 2020
+On status #: 12 of round #: 3
+  |--id: 1258651580146094085 |--date: Fri May 08 06:54:55 +0000 2020
+On status #: 13 of round #: 3
+  |--id: 1258651579340607490 |--date: Fri May 08 06:54:55 +0000 2020
+On status #: 14 of round #: 3
+  |--id: 1258651576027267072 |--date: Fri May 08 06:54:54 +0000 2020
+On status #: 15 of round #: 3
+  |--id: 1258651568913580032 |--date: Fri May 08 06:54:53 +0000 2020
+On status #: 16 of round #: 3
+  |--id: 1258651566686470144 |--date: Fri May 08 06:54:52 +0000 2020
+On status #: 17 of round #: 3
+  |--id: 1258651565054758914 |--date: Fri May 08 06:54:52 +0000 2020
+On status #: 18 of round #: 3
+  |--id: 1258651563943436288 |--date: Fri May 08 06:54:52 +0000 2020
+On status #: 19 of round #: 3
+  |--id: 1258651561187848192 |--date: Fri May 08 06:54:51 +0000 2020
+On status #: 20 of round #: 3
+  |--id: 1258651557941428225 |--date: Fri May 08 06:54:50 +0000 2020
+On status #: 21 of round #: 3
+  |--id: 1258651557693808640 |--date: Fri May 08 06:54:50 +0000 2020
+On status #: 22 of round #: 3
+  |--id: 1258651554481156097 |--date: Fri May 08 06:54:49 +0000 2020
+On status #: 23 of round #: 3
+  |--id: 1258651553818308610 |--date: Fri May 08 06:54:49 +0000 2020
+On status #: 24 of round #: 3
+  |--id: 1258651553126166529 |--date: Fri May 08 06:54:49 +0000 2020
+On status #: 25 of round #: 3
+  |--id: 1258651552933437442 |--date: Fri May 08 06:54:49 +0000 2020
+On status #: 26 of round #: 3
+  |--id: 1258651552627044354 |--date: Fri May 08 06:54:49 +0000 2020
+On status #: 27 of round #: 3
+  |--id: 1258651546398666757 |--date: Fri May 08 06:54:47 +0000 2020
+On status #: 28 of round #: 3
+  |--id: 1258651542237913090 |--date: Fri May 08 06:54:46 +0000 2020
+On status #: 29 of round #: 3
+  |--id: 1258651538509225984 |--date: Fri May 08 06:54:46 +0000 2020
+On status #: 30 of round #: 3
+  |--id: 1258651538085621760 |--date: Fri May 08 06:54:45 +0000 2020
+On status #: 31 of round #: 3
+  |--id: 1258651533295726593 |--date: Fri May 08 06:54:44 +0000 2020
+On status #: 32 of round #: 3
+  |--id: 1258651530548228096 |--date: Fri May 08 06:54:44 +0000 2020
+On status #: 33 of round #: 3
+  |--id: 1258651527473795072 |--date: Fri May 08 06:54:43 +0000 2020
+On status #: 34 of round #: 3
+  |--id: 1258651522998534144 |--date: Fri May 08 06:54:42 +0000 2020
+On status #: 35 of round #: 3
+  |--id: 1258651518213001216 |--date: Fri May 08 06:54:41 +0000 2020
+On status #: 36 of round #: 3
+  |--id: 1258651516245770240 |--date: Fri May 08 06:54:40 +0000 2020
+On status #: 37 of round #: 3
+  |--id: 1258651512361762816 |--date: Fri May 08 06:54:39 +0000 2020
+On status #: 38 of round #: 3
+  |--id: 1258651511661326337 |--date: Fri May 08 06:54:39 +0000 2020
+On status #: 39 of round #: 3
+  |--id: 1258651504887631872 |--date: Fri May 08 06:54:38 +0000 2020
+On status #: 40 of round #: 3
+  |--id: 1258651488802541569 |--date: Fri May 08 06:54:34 +0000 2020
+On status #: 41 of round #: 3
+  |--id: 1258651475909046272 |--date: Fri May 08 06:54:31 +0000 2020
+On status #: 42 of round #: 3
+  |--id: 1258651473891778562 |--date: Fri May 08 06:54:30 +0000 2020
+On status #: 43 of round #: 3
+  |--id: 1258651473203920903 |--date: Fri May 08 06:54:30 +0000 2020
+On status #: 44 of round #: 3
+  |--id: 1258651471572357120 |--date: Fri May 08 06:54:30 +0000 2020
+On status #: 45 of round #: 3
+  |--id: 1258651465809182720 |--date: Fri May 08 06:54:28 +0000 2020
+On status #: 46 of round #: 3
+  |--id: 1258651462130757633 |--date: Fri May 08 06:54:27 +0000 2020
+On status #: 47 of round #: 3
+  |--id: 1258651459358298112 |--date: Fri May 08 06:54:27 +0000 2020
+On status #: 48 of round #: 3
+  |--id: 1258651452467101696 |--date: Fri May 08 06:54:25 +0000 2020
+On status #: 49 of round #: 3
+  |--id: 1258651448318951424 |--date: Fri May 08 06:54:24 +0000 2020
+On status #: 50 of round #: 3
+  |--id: 1258651444057526272 |--date: Fri May 08 06:54:23 +0000 2020
+On status #: 51 of round #: 3
+  |--id: 1258651442660941824 |--date: Fri May 08 06:54:23 +0000 2020
+On status #: 52 of round #: 3
+  |--id: 1258651437258534912 |--date: Fri May 08 06:54:21 +0000 2020
+On status #: 53 of round #: 3
+  |--id: 1258651436151214080 |--date: Fri May 08 06:54:21 +0000 2020
+On status #: 54 of round #: 3
+  |--id: 1258651429532659712 |--date: Fri May 08 06:54:20 +0000 2020
+On status #: 55 of round #: 3
+  |--id: 1258651428370841600 |--date: Fri May 08 06:54:19 +0000 2020
+On status #: 56 of round #: 3
+  |--id: 1258651422704484353 |--date: Fri May 08 06:54:18 +0000 2020
+On status #: 57 of round #: 3
+  |--id: 1258651418065420290 |--date: Fri May 08 06:54:17 +0000 2020
+On status #: 58 of round #: 3
+  |--id: 1258651417629212672 |--date: Fri May 08 06:54:17 +0000 2020
+On status #: 59 of round #: 3
+  |--id: 1258651416446373889 |--date: Fri May 08 06:54:16 +0000 2020
+On status #: 60 of round #: 3
+  |--id: 1258651416442396673 |--date: Fri May 08 06:54:16 +0000 2020
+On status #: 61 of round #: 3
+  |--id: 1258651409391722496 |--date: Fri May 08 06:54:15 +0000 2020
+On status #: 62 of round #: 3
+  |--id: 1258651403247116293 |--date: Fri May 08 06:54:13 +0000 2020
+On status #: 63 of round #: 3
+  |--id: 1258651401825075201 |--date: Fri May 08 06:54:13 +0000 2020
+On status #: 64 of round #: 3
+  |--id: 1258651398301863936 |--date: Fri May 08 06:54:12 +0000 2020
+On status #: 65 of round #: 3
+  |--id: 1258651397073129475 |--date: Fri May 08 06:54:12 +0000 2020
+On status #: 66 of round #: 3
+  |--id: 1258651393394651136 |--date: Fri May 08 06:54:11 +0000 2020
+On status #: 67 of round #: 3
+  |--id: 1258651387891777536 |--date: Fri May 08 06:54:10 +0000 2020
+On status #: 68 of round #: 3
+  |--id: 1258651383462584321 |--date: Fri May 08 06:54:09 +0000 2020
+On status #: 69 of round #: 3
+  |--id: 1258651374247501825 |--date: Fri May 08 06:54:06 +0000 2020
+On status #: 70 of round #: 3
+  |--id: 1258651370095349760 |--date: Fri May 08 06:54:05 +0000 2020
+On status #: 71 of round #: 3
+  |--id: 1258651354198757376 |--date: Fri May 08 06:54:02 +0000 2020
+On status #: 72 of round #: 3
+  |--id: 1258651350973308928 |--date: Fri May 08 06:54:01 +0000 2020
+On status #: 73 of round #: 3
+  |--id: 1258651342865743877 |--date: Fri May 08 06:53:59 +0000 2020
+On status #: 74 of round #: 3
+  |--id: 1258651342425387010 |--date: Fri May 08 06:53:59 +0000 2020
+On status #: 75 of round #: 3
+  |--id: 1258651338361225216 |--date: Fri May 08 06:53:58 +0000 2020
+On status #: 76 of round #: 3
+  |--id: 1258651330949926912 |--date: Fri May 08 06:53:56 +0000 2020
+On status #: 77 of round #: 3
+  |--id: 1258651330874392576 |--date: Fri May 08 06:53:56 +0000 2020
+On status #: 78 of round #: 3
+  |--id: 1258651323597111296 |--date: Fri May 08 06:53:54 +0000 2020
+On status #: 79 of round #: 3
+  |--id: 1258651320858312706 |--date: Fri May 08 06:53:54 +0000 2020
+On status #: 80 of round #: 3
+  |--id: 1258651319667003394 |--date: Fri May 08 06:53:53 +0000 2020
+On status #: 81 of round #: 3
+  |--id: 1258651317548879872 |--date: Fri May 08 06:53:53 +0000 2020
+On status #: 82 of round #: 3
+  |--id: 1258651316361912320 |--date: Fri May 08 06:53:53 +0000 2020
+On status #: 83 of round #: 3
+  |--id: 1258651315728719872 |--date: Fri May 08 06:53:52 +0000 2020
+On status #: 84 of round #: 3
+  |--id: 1258651312671141889 |--date: Fri May 08 06:53:52 +0000 2020
+On status #: 85 of round #: 3
+  |--id: 1258651312125693952 |--date: Fri May 08 06:53:52 +0000 2020
+On status #: 86 of round #: 3
+  |--id: 1258651308409491456 |--date: Fri May 08 06:53:51 +0000 2020
+On status #: 87 of round #: 3
+  |--id: 1258651306971062272 |--date: Fri May 08 06:53:50 +0000 2020
+On status #: 88 of round #: 3
+  |--id: 1258651299639291904 |--date: Fri May 08 06:53:49 +0000 2020
+On status #: 89 of round #: 3
+  |--id: 1258651295340085248 |--date: Fri May 08 06:53:48 +0000 2020
+On status #: 90 of round #: 3
+  |--id: 1258651294497157129 |--date: Fri May 08 06:53:47 +0000 2020
+On status #: 91 of round #: 3
+  |--id: 1258651290239934464 |--date: Fri May 08 06:53:46 +0000 2020
+On status #: 92 of round #: 3
+  |--id: 1258651289421930496 |--date: Fri May 08 06:53:46 +0000 2020
+On status #: 93 of round #: 3
+  |--id: 1258651289162055680 |--date: Fri May 08 06:53:46 +0000 2020
+On status #: 94 of round #: 3
+  |--id: 1258651284804001794 |--date: Fri May 08 06:53:45 +0000 2020
+On status #: 95 of round #: 3
+  |--id: 1258651281545203712 |--date: Fri May 08 06:53:44 +0000 2020
+On status #: 96 of round #: 3
+  |--id: 1258651272309280770 |--date: Fri May 08 06:53:42 +0000 2020
+On status #: 97 of round #: 3
+  |--id: 1258651266462306306 |--date: Fri May 08 06:53:41 +0000 2020
+On status #: 98 of round #: 3
+  |--id: 1258651259676000256 |--date: Fri May 08 06:53:39 +0000 2020
+On status #: 99 of round #: 3
+  |--id: 1258651255007821824 |--date: Fri May 08 06:53:38 +0000 2020
+
+
+==============================================================================================================
+
+__Initialized__ @Fri May  8 06:59:01 2020
+
+==============================================================================================================
+
+
+
+
+==============================================================================================================
+
+__Initialized__ @Fri May  8 07:00:17 2020
+
+==============================================================================================================
+
+
+
+
+==============================================================================================================
+
+__Initialized__ @Fri May  8 07:31:00 2020
+
+==============================================================================================================
+
+
+
+
+==============================================================================================================
+
+__Initialized__ @Fri May  8 07:34:27 2020
+
+==============================================================================================================
+
+
+
+
+==============================================================================================================
+
+__Initialized__ @Fri May  8 07:36:50 2020
+
+==============================================================================================================
+
+
+
+
+==============================================================================================================
+
+__Initialized__ @Fri May  8 07:42:41 2020
+
+==============================================================================================================
+
+
+[get_latest_tweet_id] Request Count: 1
+[get_latest_tweet_id] Getting the latest 
+[MAIN RUN] last_max_id: 1258663594926825472
+[MAIN RUN] Current round: 0
+[search_tweets] Request Count: 2
+On status #: 0 of round #: 1
+  |--id: 1258661561482149893 |--date: Fri May 08 07:34:35 +0000 2020
+On status #: 1 of round #: 1
+  |--id: 1258659834729095168 |--date: Fri May 08 07:27:44 +0000 2020
+On status #: 2 of round #: 1
+  |--id: 1258656193737748480 |--date: Fri May 08 07:13:15 +0000 2020
+On status #: 3 of round #: 1
+  |--id: 1258655958689091585 |--date: Fri May 08 07:12:19 +0000 2020
+On status #: 4 of round #: 1
+  |--id: 1258653704988712960 |--date: Fri May 08 07:03:22 +0000 2020
+On status #: 5 of round #: 1
+  |--id: 1258638992418828288 |--date: Fri May 08 06:04:54 +0000 2020
+On status #: 6 of round #: 1
+  |--id: 1258617123619794944 |--date: Fri May 08 04:38:00 +0000 2020
+On status #: 7 of round #: 1
+  |--id: 1258615477078642688 |--date: Fri May 08 04:31:28 +0000 2020
+On status #: 8 of round #: 1
+  |--id: 1258615322451382275 |--date: Fri May 08 04:30:51 +0000 2020
+On status #: 9 of round #: 1
+  |--id: 1258615216117432320 |--date: Fri May 08 04:30:26 +0000 2020
+On status #: 10 of round #: 1
+  |--id: 1258611252969996289 |--date: Fri May 08 04:14:41 +0000 2020
+On status #: 11 of round #: 1
+  |--id: 1258611143523745792 |--date: Fri May 08 04:14:15 +0000 2020
+On status #: 12 of round #: 1
+  |--id: 1258611052922589184 |--date: Fri May 08 04:13:53 +0000 2020
+On status #: 13 of round #: 1
+  |--id: 1258610439832973312 |--date: Fri May 08 04:11:27 +0000 2020
+On status #: 14 of round #: 1
+  |--id: 1258608852078964736 |--date: Fri May 08 04:05:08 +0000 2020
+On status #: 15 of round #: 1
+  |--id: 1258606656373395458 |--date: Fri May 08 03:56:25 +0000 2020
+On status #: 16 of round #: 1
+  |--id: 1258589430895579137 |--date: Fri May 08 02:47:58 +0000 2020
+On status #: 17 of round #: 1
+  |--id: 1258589115873816579 |--date: Fri May 08 02:46:43 +0000 2020
+On status #: 18 of round #: 1
+  |--id: 1258587066478194689 |--date: Fri May 08 02:38:34 +0000 2020
+On status #: 19 of round #: 1
+  |--id: 1258585865959337984 |--date: Fri May 08 02:33:48 +0000 2020
+On status #: 20 of round #: 1
+  |--id: 1258581740542734338 |--date: Fri May 08 02:17:24 +0000 2020
+On status #: 21 of round #: 1
+  |--id: 1258569359326404608 |--date: Fri May 08 01:28:13 +0000 2020
+On status #: 22 of round #: 1
+  |--id: 1258565583659888640 |--date: Fri May 08 01:13:12 +0000 2020
+On status #: 23 of round #: 1
+  |--id: 1258564390598504448 |--date: Fri May 08 01:08:28 +0000 2020
+On status #: 24 of round #: 1
+  |--id: 1258539239521660928 |--date: Thu May 07 23:28:31 +0000 2020
+On status #: 25 of round #: 1
+  |--id: 1258536635232223232 |--date: Thu May 07 23:18:10 +0000 2020
+On status #: 26 of round #: 1
+  |--id: 1258536373721554945 |--date: Thu May 07 23:17:08 +0000 2020
+On status #: 27 of round #: 1
+  |--id: 1258536068783042560 |--date: Thu May 07 23:15:55 +0000 2020
+On status #: 28 of round #: 1
+  |--id: 1258532926104285184 |--date: Thu May 07 23:03:26 +0000 2020
+On status #: 29 of round #: 1
+  |--id: 1258531556471128064 |--date: Thu May 07 22:58:00 +0000 2020
+On status #: 30 of round #: 1
+  |--id: 1258517766971125760 |--date: Thu May 07 22:03:12 +0000 2020
+On status #: 31 of round #: 1
+  |--id: 1258508779726860288 |--date: Thu May 07 21:27:29 +0000 2020
+On status #: 32 of round #: 1
+  |--id: 1258453484174749697 |--date: Thu May 07 17:47:46 +0000 2020
+On status #: 33 of round #: 1
+  |--id: 1258436474472501248 |--date: Thu May 07 16:40:10 +0000 2020
+On status #: 34 of round #: 1
+  |--id: 1258419497536389121 |--date: Thu May 07 15:32:43 +0000 2020
+On status #: 35 of round #: 1
+  |--id: 1258387760890535938 |--date: Thu May 07 13:26:36 +0000 2020
+On status #: 36 of round #: 1
+  |--id: 1258384831316180992 |--date: Thu May 07 13:14:58 +0000 2020
+On status #: 37 of round #: 1
+  |--id: 1258376444293509120 |--date: Thu May 07 12:41:38 +0000 2020
+On status #: 38 of round #: 1
+  |--id: 1258373711289176064 |--date: Thu May 07 12:30:46 +0000 2020
+On status #: 39 of round #: 1
+  |--id: 1258363503666245632 |--date: Thu May 07 11:50:13 +0000 2020
+On status #: 40 of round #: 1
+  |--id: 1258359419718348800 |--date: Thu May 07 11:33:59 +0000 2020
+On status #: 41 of round #: 1
+  |--id: 1258356278616887296 |--date: Thu May 07 11:21:30 +0000 2020
+On status #: 42 of round #: 1
+  |--id: 1258347347869790214 |--date: Thu May 07 10:46:01 +0000 2020
+On status #: 43 of round #: 1
+  |--id: 1258343597436436480 |--date: Thu May 07 10:31:07 +0000 2020
+On status #: 44 of round #: 1
+  |--id: 1258343218887835649 |--date: Thu May 07 10:29:36 +0000 2020
+On status #: 45 of round #: 1
+  |--id: 1258342508188168192 |--date: Thu May 07 10:26:47 +0000 2020
+On status #: 46 of round #: 1
+  |--id: 1258340700627894273 |--date: Thu May 07 10:19:36 +0000 2020
+On status #: 47 of round #: 1
+  |--id: 1258340630855548930 |--date: Thu May 07 10:19:19 +0000 2020
+On status #: 48 of round #: 1
+  |--id: 1258339970395312128 |--date: Thu May 07 10:16:42 +0000 2020
+On status #: 49 of round #: 1
+  |--id: 1258338456989827072 |--date: Thu May 07 10:10:41 +0000 2020
+On status #: 50 of round #: 1
+  |--id: 1258338012276064258 |--date: Thu May 07 10:08:55 +0000 2020
+On status #: 51 of round #: 1
+  |--id: 1258336305496252417 |--date: Thu May 07 10:02:08 +0000 2020
+On status #: 52 of round #: 1
+  |--id: 1258332719718600705 |--date: Thu May 07 09:47:53 +0000 2020
+On status #: 53 of round #: 1
+  |--id: 1258313225247981569 |--date: Thu May 07 08:30:25 +0000 2020
+On status #: 54 of round #: 1
+  |--id: 1258305684665335808 |--date: Thu May 07 08:00:28 +0000 2020
+On status #: 55 of round #: 1
+  |--id: 1258304464722841602 |--date: Thu May 07 07:55:37 +0000 2020
+On status #: 56 of round #: 1
+  |--id: 1258299461152854016 |--date: Thu May 07 07:35:44 +0000 2020
+On status #: 57 of round #: 1
+  |--id: 1258297947386593280 |--date: Thu May 07 07:29:43 +0000 2020
+On status #: 58 of round #: 1
+  |--id: 1258297937064366080 |--date: Thu May 07 07:29:40 +0000 2020
+On status #: 59 of round #: 1
+  |--id: 1258289356285988864 |--date: Thu May 07 06:55:35 +0000 2020
+On status #: 60 of round #: 1
+  |--id: 1258286674900946949 |--date: Thu May 07 06:44:55 +0000 2020
+On status #: 61 of round #: 1
+  |--id: 1258282073351225344 |--date: Thu May 07 06:26:38 +0000 2020
+On status #: 62 of round #: 1
+  |--id: 1258275017629949957 |--date: Thu May 07 05:58:36 +0000 2020
+On status #: 63 of round #: 1
+  |--id: 1258272317638971395 |--date: Thu May 07 05:47:52 +0000 2020
+On status #: 64 of round #: 1
+  |--id: 1258254021145399296 |--date: Thu May 07 04:35:10 +0000 2020
+On status #: 65 of round #: 1
+  |--id: 1258247645379784704 |--date: Thu May 07 04:09:50 +0000 2020
+On status #: 66 of round #: 1
+  |--id: 1258247560742887424 |--date: Thu May 07 04:09:30 +0000 2020
+On status #: 67 of round #: 1
+  |--id: 1258246664566960128 |--date: Thu May 07 04:05:56 +0000 2020
+On status #: 68 of round #: 1
+  |--id: 1258243053849993217 |--date: Thu May 07 03:51:35 +0000 2020
+On status #: 69 of round #: 1
+  |--id: 1258242256936599552 |--date: Thu May 07 03:48:25 +0000 2020
+On status #: 70 of round #: 1
+  |--id: 1258238371274481664 |--date: Thu May 07 03:32:59 +0000 2020
+On status #: 71 of round #: 1
+  |--id: 1258236766680539136 |--date: Thu May 07 03:26:36 +0000 2020
+On status #: 72 of round #: 1
+  |--id: 1258234257278976002 |--date: Thu May 07 03:16:38 +0000 2020
+On status #: 73 of round #: 1
+  |--id: 1258232528596418561 |--date: Thu May 07 03:09:46 +0000 2020
+On status #: 74 of round #: 1
+  |--id: 1258232486640775168 |--date: Thu May 07 03:09:36 +0000 2020
+On status #: 75 of round #: 1
+  |--id: 1258232427517890560 |--date: Thu May 07 03:09:22 +0000 2020
+On status #: 76 of round #: 1
+  |--id: 1258232215814586369 |--date: Thu May 07 03:08:31 +0000 2020
+On status #: 77 of round #: 1
+  |--id: 1258229821072478208 |--date: Thu May 07 02:59:00 +0000 2020
+On status #: 78 of round #: 1
+  |--id: 1258226585821253632 |--date: Thu May 07 02:46:09 +0000 2020
+On status #: 79 of round #: 1
+  |--id: 1258212699885862912 |--date: Thu May 07 01:50:58 +0000 2020
+On status #: 80 of round #: 1
+  |--id: 1258209932911894528 |--date: Thu May 07 01:39:59 +0000 2020
+On status #: 81 of round #: 1
+  |--id: 1258201981849489408 |--date: Thu May 07 01:08:23 +0000 2020
+On status #: 82 of round #: 1
+  |--id: 1258170807227830272 |--date: Wed May 06 23:04:30 +0000 2020
+On status #: 83 of round #: 1
+  |--id: 1258161305795657728 |--date: Wed May 06 22:26:45 +0000 2020
+On status #: 84 of round #: 1
+  |--id: 1258158635194241026 |--date: Wed May 06 22:16:08 +0000 2020
+On status #: 85 of round #: 1
+  |--id: 1258156900639596544 |--date: Wed May 06 22:09:15 +0000 2020
+On status #: 86 of round #: 1
+  |--id: 1258155576778948611 |--date: Wed May 06 22:03:59 +0000 2020
+On status #: 87 of round #: 1
+  |--id: 1258154418635071493 |--date: Wed May 06 21:59:23 +0000 2020
+On status #: 88 of round #: 1
+  |--id: 1258152611384942593 |--date: Wed May 06 21:52:12 +0000 2020
+On status #: 89 of round #: 1
+  |--id: 1258150711080046592 |--date: Wed May 06 21:44:39 +0000 2020
+On status #: 90 of round #: 1
+  |--id: 1258144666706305025 |--date: Wed May 06 21:20:38 +0000 2020
+On status #: 91 of round #: 1
+  |--id: 1258140480316952577 |--date: Wed May 06 21:04:00 +0000 2020
+On status #: 92 of round #: 1
+  |--id: 1258136572764905472 |--date: Wed May 06 20:48:28 +0000 2020
+On status #: 93 of round #: 1
+  |--id: 1258129912356954113 |--date: Wed May 06 20:22:00 +0000 2020
+On status #: 94 of round #: 1
+  |--id: 1258123591402455040 |--date: Wed May 06 19:56:53 +0000 2020
+On status #: 95 of round #: 1
+  |--id: 1258093128260567041 |--date: Wed May 06 17:55:50 +0000 2020
+On status #: 96 of round #: 1
+  |--id: 1258051864290971655 |--date: Wed May 06 15:11:52 +0000 2020
+On status #: 97 of round #: 1
+  |--id: 1258039331836444677 |--date: Wed May 06 14:22:04 +0000 2020
+On status #: 98 of round #: 1
+  |--id: 1258036821306470410 |--date: Wed May 06 14:12:06 +0000 2020
+On status #: 99 of round #: 1
+  |--id: 1258035971183882241 |--date: Wed May 06 14:08:43 +0000 2020
+[MAIN RUN] Current round: 1
+[search_tweets] Request Count: 3
+On status #: 0 of round #: 2
+  |--id: 1258035971183882241 |--date: Wed May 06 14:08:43 +0000 2020
+On status #: 1 of round #: 2
+  |--id: 1258033889068507137 |--date: Wed May 06 14:00:26 +0000 2020
+On status #: 2 of round #: 2
+  |--id: 1258030340322365441 |--date: Wed May 06 13:46:20 +0000 2020
+On status #: 3 of round #: 2
+  |--id: 1258029155003756550 |--date: Wed May 06 13:41:38 +0000 2020
+On status #: 4 of round #: 2
+  |--id: 1258028047053189120 |--date: Wed May 06 13:37:14 +0000 2020
+On status #: 5 of round #: 2
+  |--id: 1258027902081200129 |--date: Wed May 06 13:36:39 +0000 2020
+On status #: 6 of round #: 2
+  |--id: 1258026883557363712 |--date: Wed May 06 13:32:36 +0000 2020
+On status #: 7 of round #: 2
+  |--id: 1258026236623773696 |--date: Wed May 06 13:30:02 +0000 2020
+On status #: 8 of round #: 2
+  |--id: 1258025919500808194 |--date: Wed May 06 13:28:46 +0000 2020
+On status #: 9 of round #: 2
+  |--id: 1258016049082982400 |--date: Wed May 06 12:49:33 +0000 2020
+On status #: 10 of round #: 2
+  |--id: 1258013540226498565 |--date: Wed May 06 12:39:35 +0000 2020
+On status #: 11 of round #: 2
+  |--id: 1258003271567859719 |--date: Wed May 06 11:58:47 +0000 2020
+On status #: 12 of round #: 2
+  |--id: 1258001943873466373 |--date: Wed May 06 11:53:30 +0000 2020
+On status #: 13 of round #: 2
+  |--id: 1257999425491722240 |--date: Wed May 06 11:43:30 +0000 2020
+On status #: 14 of round #: 2
+  |--id: 1257998477092548608 |--date: Wed May 06 11:39:44 +0000 2020
+On status #: 15 of round #: 2
+  |--id: 1257996059390947331 |--date: Wed May 06 11:30:07 +0000 2020
+On status #: 16 of round #: 2
+  |--id: 1257994079960358919 |--date: Wed May 06 11:22:15 +0000 2020
+On status #: 17 of round #: 2
+  |--id: 1257990064430362624 |--date: Wed May 06 11:06:18 +0000 2020
+On status #: 18 of round #: 2
+  |--id: 1257979496541507585 |--date: Wed May 06 10:24:18 +0000 2020
+On status #: 19 of round #: 2
+  |--id: 1257978774508892162 |--date: Wed May 06 10:21:26 +0000 2020
+On status #: 20 of round #: 2
+  |--id: 1257968860633784322 |--date: Wed May 06 09:42:02 +0000 2020
+On status #: 21 of round #: 2
+  |--id: 1257968016400105472 |--date: Wed May 06 09:38:41 +0000 2020
+On status #: 22 of round #: 2
+  |--id: 1257964283897372672 |--date: Wed May 06 09:23:51 +0000 2020
+On status #: 23 of round #: 2
+  |--id: 1257959948966744072 |--date: Wed May 06 09:06:38 +0000 2020
+On status #: 24 of round #: 2
+  |--id: 1257959811376795654 |--date: Wed May 06 09:06:05 +0000 2020
+On status #: 25 of round #: 2
+  |--id: 1257959745077436418 |--date: Wed May 06 09:05:49 +0000 2020
+On status #: 26 of round #: 2
+  |--id: 1257959687783215107 |--date: Wed May 06 09:05:35 +0000 2020
+On status #: 27 of round #: 2
+  |--id: 1257959565670277121 |--date: Wed May 06 09:05:06 +0000 2020
+On status #: 28 of round #: 2
+  |--id: 1257955726791598083 |--date: Wed May 06 08:49:51 +0000 2020
+On status #: 29 of round #: 2
+  |--id: 1257954516437254145 |--date: Wed May 06 08:45:03 +0000 2020
+On status #: 30 of round #: 2
+  |--id: 1257940106574311424 |--date: Wed May 06 07:47:47 +0000 2020
+On status #: 31 of round #: 2
+  |--id: 1257927354497691649 |--date: Wed May 06 06:57:07 +0000 2020
+On status #: 32 of round #: 2
+  |--id: 1257918158821867524 |--date: Wed May 06 06:20:34 +0000 2020
+On status #: 33 of round #: 2
+  |--id: 1257916048373944320 |--date: Wed May 06 06:12:11 +0000 2020
+On status #: 34 of round #: 2
+  |--id: 1257913659793092609 |--date: Wed May 06 06:02:42 +0000 2020
+On status #: 35 of round #: 2
+  |--id: 1257885708829642753 |--date: Wed May 06 04:11:38 +0000 2020
+On status #: 36 of round #: 2
+  |--id: 1257883542291431426 |--date: Wed May 06 04:03:01 +0000 2020
+On status #: 37 of round #: 2
+  |--id: 1257882589911629824 |--date: Wed May 06 03:59:14 +0000 2020
+On status #: 38 of round #: 2
+  |--id: 1257879210347167744 |--date: Wed May 06 03:45:48 +0000 2020
+On status #: 39 of round #: 2
+  |--id: 1257877530108809216 |--date: Wed May 06 03:39:08 +0000 2020
+On status #: 40 of round #: 2
+  |--id: 1257852229106589696 |--date: Wed May 06 01:58:35 +0000 2020
+On status #: 41 of round #: 2
+  |--id: 1257852166070550530 |--date: Wed May 06 01:58:20 +0000 2020
+On status #: 42 of round #: 2
+  |--id: 1257849307111190528 |--date: Wed May 06 01:46:59 +0000 2020
+On status #: 43 of round #: 2
+  |--id: 1257847226820292608 |--date: Wed May 06 01:38:43 +0000 2020
+On status #: 44 of round #: 2
+  |--id: 1257843917497630720 |--date: Wed May 06 01:25:34 +0000 2020
+On status #: 45 of round #: 2
+  |--id: 1257843041383051264 |--date: Wed May 06 01:22:05 +0000 2020
+On status #: 46 of round #: 2
+  |--id: 1257842844959555584 |--date: Wed May 06 01:21:18 +0000 2020
+On status #: 47 of round #: 2
+  |--id: 1257839731921936384 |--date: Wed May 06 01:08:56 +0000 2020
+On status #: 48 of round #: 2
+  |--id: 1257828040173740032 |--date: Wed May 06 00:22:28 +0000 2020
+On status #: 49 of round #: 2
+  |--id: 1257827443215183873 |--date: Wed May 06 00:20:06 +0000 2020
+On status #: 50 of round #: 2
+  |--id: 1257824954134851585 |--date: Wed May 06 00:10:12 +0000 2020
+On status #: 51 of round #: 2
+  |--id: 1257811596858011648 |--date: Tue May 05 23:17:08 +0000 2020
+On status #: 52 of round #: 2
+  |--id: 1257811338576838657 |--date: Tue May 05 23:16:06 +0000 2020
+On status #: 53 of round #: 2
+  |--id: 1257809613816135681 |--date: Tue May 05 23:09:15 +0000 2020
+On status #: 54 of round #: 2
+  |--id: 1257807289806815232 |--date: Tue May 05 23:00:01 +0000 2020
+On status #: 55 of round #: 2
+  |--id: 1257803636773511168 |--date: Tue May 05 22:45:30 +0000 2020
+On status #: 56 of round #: 2
+  |--id: 1257797897787080704 |--date: Tue May 05 22:22:42 +0000 2020
+On status #: 57 of round #: 2
+  |--id: 1257793462604308480 |--date: Tue May 05 22:05:04 +0000 2020
+On status #: 58 of round #: 2
+  |--id: 1257784111717969920 |--date: Tue May 05 21:27:55 +0000 2020
+On status #: 59 of round #: 2
+  |--id: 1257712074756689920 |--date: Tue May 05 16:41:40 +0000 2020
+On status #: 60 of round #: 2
+  |--id: 1257706839757611009 |--date: Tue May 05 16:20:52 +0000 2020
+On status #: 61 of round #: 2
+  |--id: 1257656811684982784 |--date: Tue May 05 13:02:04 +0000 2020
+On status #: 62 of round #: 2
+  |--id: 1257648229648343044 |--date: Tue May 05 12:27:58 +0000 2020
+On status #: 63 of round #: 2
+  |--id: 1257644405625745409 |--date: Tue May 05 12:12:46 +0000 2020
+On status #: 64 of round #: 2
+  |--id: 1257642373577797634 |--date: Tue May 05 12:04:42 +0000 2020
+On status #: 65 of round #: 2
+  |--id: 1257638580735926272 |--date: Tue May 05 11:49:38 +0000 2020
+On status #: 66 of round #: 2
+  |--id: 1257636069140361217 |--date: Tue May 05 11:39:39 +0000 2020
+On status #: 67 of round #: 2
+  |--id: 1257633405082034178 |--date: Tue May 05 11:29:04 +0000 2020
+On status #: 68 of round #: 2
+  |--id: 1257632263501537283 |--date: Tue May 05 11:24:31 +0000 2020
+On status #: 69 of round #: 2
+  |--id: 1257631007387222016 |--date: Tue May 05 11:19:32 +0000 2020
+On status #: 70 of round #: 2
+  |--id: 1257630196158459905 |--date: Tue May 05 11:16:19 +0000 2020
+On status #: 71 of round #: 2
+  |--id: 1257616327000428544 |--date: Tue May 05 10:21:12 +0000 2020
+On status #: 72 of round #: 2
+  |--id: 1257614780724019201 |--date: Tue May 05 10:15:03 +0000 2020
+On status #: 73 of round #: 2
+  |--id: 1257613331516370944 |--date: Tue May 05 10:09:18 +0000 2020
+On status #: 74 of round #: 2
+  |--id: 1257613265741312000 |--date: Tue May 05 10:09:02 +0000 2020
+On status #: 75 of round #: 2
+  |--id: 1257613195482525696 |--date: Tue May 05 10:08:45 +0000 2020
+On status #: 76 of round #: 2
+  |--id: 1257611887438528515 |--date: Tue May 05 10:03:33 +0000 2020
+On status #: 77 of round #: 2
+  |--id: 1257611867133849600 |--date: Tue May 05 10:03:29 +0000 2020
+On status #: 78 of round #: 2
+  |--id: 1257611829825552387 |--date: Tue May 05 10:03:20 +0000 2020
+On status #: 79 of round #: 2
+  |--id: 1257610817916133376 |--date: Tue May 05 09:59:18 +0000 2020
+On status #: 80 of round #: 2
+  |--id: 1257607631323070464 |--date: Tue May 05 09:46:39 +0000 2020
+On status #: 81 of round #: 2
+  |--id: 1257606015337418753 |--date: Tue May 05 09:40:13 +0000 2020
+On status #: 82 of round #: 2
+  |--id: 1257604460467023874 |--date: Tue May 05 09:34:03 +0000 2020
+On status #: 83 of round #: 2
+  |--id: 1257602228648476672 |--date: Tue May 05 09:25:11 +0000 2020
+On status #: 84 of round #: 2
+  |--id: 1257599450622472192 |--date: Tue May 05 09:14:08 +0000 2020
+On status #: 85 of round #: 2
+  |--id: 1257597847421124608 |--date: Tue May 05 09:07:46 +0000 2020
+On status #: 86 of round #: 2
+  |--id: 1257594243327184896 |--date: Tue May 05 08:53:27 +0000 2020
+On status #: 87 of round #: 2
+  |--id: 1257571636565475333 |--date: Tue May 05 07:23:37 +0000 2020
+On status #: 88 of round #: 2
+  |--id: 1257569400388939779 |--date: Tue May 05 07:14:44 +0000 2020
+On status #: 89 of round #: 2
+  |--id: 1257566192274796547 |--date: Tue May 05 07:01:59 +0000 2020
+On status #: 90 of round #: 2
+  |--id: 1257560314234630146 |--date: Tue May 05 06:38:37 +0000 2020
+On status #: 91 of round #: 2
+  |--id: 1257557944310231040 |--date: Tue May 05 06:29:12 +0000 2020
+On status #: 92 of round #: 2
+  |--id: 1257547051815956480 |--date: Tue May 05 05:45:55 +0000 2020
+On status #: 93 of round #: 2
+  |--id: 1257533211619422208 |--date: Tue May 05 04:50:56 +0000 2020
+[MAIN RUN] Current round: 2
+[search_tweets] Request Count: 4
+On status #: 0 of round #: 3
+  |--id: 1257533211619422208 |--date: Tue May 05 04:50:56 +0000 2020
+On status #: 1 of round #: 3
+  |--id: 1257529217484419072 |--date: Tue May 05 04:35:03 +0000 2020
+On status #: 2 of round #: 3
+  |--id: 1257528519740887042 |--date: Tue May 05 04:32:17 +0000 2020
+On status #: 3 of round #: 3
+  |--id: 1257526479799250945 |--date: Tue May 05 04:24:11 +0000 2020
+On status #: 4 of round #: 3
+  |--id: 1257517252628197382 |--date: Tue May 05 03:47:31 +0000 2020
+On status #: 5 of round #: 3
+  |--id: 1257496554270646277 |--date: Tue May 05 02:25:16 +0000 2020
+On status #: 6 of round #: 3
+  |--id: 1257496071078436865 |--date: Tue May 05 02:23:21 +0000 2020
+On status #: 7 of round #: 3
+  |--id: 1257473806173528064 |--date: Tue May 05 00:54:52 +0000 2020
+On status #: 8 of round #: 3
+  |--id: 1257466774246875137 |--date: Tue May 05 00:26:56 +0000 2020
+On status #: 9 of round #: 3
+  |--id: 1257454641807228928 |--date: Mon May 04 23:38:43 +0000 2020
+On status #: 10 of round #: 3
+  |--id: 1257452446378536960 |--date: Mon May 04 23:30:00 +0000 2020
+On status #: 11 of round #: 3
+  |--id: 1257451170643300352 |--date: Mon May 04 23:24:56 +0000 2020
+On status #: 12 of round #: 3
+  |--id: 1257445178555748352 |--date: Mon May 04 23:01:07 +0000 2020
+On status #: 13 of round #: 3
+  |--id: 1257423413452460038 |--date: Mon May 04 21:34:38 +0000 2020
+On status #: 14 of round #: 3
+  |--id: 1257407860884910082 |--date: Mon May 04 20:32:50 +0000 2020
+On status #: 15 of round #: 3
+  |--id: 1257405937846857731 |--date: Mon May 04 20:25:11 +0000 2020
+On status #: 16 of round #: 3
+  |--id: 1257372081580314626 |--date: Mon May 04 18:10:39 +0000 2020
+On status #: 17 of round #: 3
+  |--id: 1257318534029258758 |--date: Mon May 04 14:37:53 +0000 2020
+On status #: 18 of round #: 3
+  |--id: 1257285856433328128 |--date: Mon May 04 12:28:02 +0000 2020
+On status #: 19 of round #: 3
+  |--id: 1257284533319155712 |--date: Mon May 04 12:22:46 +0000 2020
+On status #: 20 of round #: 3
+  |--id: 1257280357059059712 |--date: Mon May 04 12:06:10 +0000 2020
+On status #: 21 of round #: 3
+  |--id: 1257268569881980928 |--date: Mon May 04 11:19:20 +0000 2020
+On status #: 22 of round #: 3
+  |--id: 1257264144673193985 |--date: Mon May 04 11:01:45 +0000 2020
+On status #: 23 of round #: 3
+  |--id: 1257257525256359937 |--date: Mon May 04 10:35:27 +0000 2020
+On status #: 24 of round #: 3
+  |--id: 1257249934299938816 |--date: Mon May 04 10:05:17 +0000 2020
+On status #: 25 of round #: 3
+  |--id: 1257248633306714113 |--date: Mon May 04 10:00:07 +0000 2020
+On status #: 26 of round #: 3
+  |--id: 1257248554441048064 |--date: Mon May 04 09:59:48 +0000 2020
+On status #: 27 of round #: 3
+  |--id: 1257248500305158145 |--date: Mon May 04 09:59:35 +0000 2020
+On status #: 28 of round #: 3
+  |--id: 1257248407439110144 |--date: Mon May 04 09:59:13 +0000 2020
+On status #: 29 of round #: 3
+  |--id: 1257242058059735041 |--date: Mon May 04 09:33:59 +0000 2020
+On status #: 30 of round #: 3
+  |--id: 1257241320269049856 |--date: Mon May 04 09:31:03 +0000 2020
+On status #: 31 of round #: 3
+  |--id: 1257233273446469632 |--date: Mon May 04 08:59:05 +0000 2020
+On status #: 32 of round #: 3
+  |--id: 1257222932947849221 |--date: Mon May 04 08:17:59 +0000 2020
+On status #: 33 of round #: 3
+  |--id: 1257218876615520256 |--date: Mon May 04 08:01:52 +0000 2020
+On status #: 34 of round #: 3
+  |--id: 1257213101784461314 |--date: Mon May 04 07:38:56 +0000 2020
+On status #: 35 of round #: 3
+  |--id: 1257206008340008960 |--date: Mon May 04 07:10:44 +0000 2020
+On status #: 36 of round #: 3
+  |--id: 1257204965585584129 |--date: Mon May 04 07:06:36 +0000 2020
+On status #: 37 of round #: 3
+  |--id: 1257203195622772737 |--date: Mon May 04 06:59:34 +0000 2020
+[MAIN RUN] Current round: 3
+[search_tweets] Request Count: 5
+On status #: 0 of round #: 4
+  |--id: 1257203195622772737 |--date: Mon May 04 06:59:34 +0000 2020
+On status #: 1 of round #: 4
+  |--id: 1257187332643405825 |--date: Mon May 04 05:56:32 +0000 2020
+On status #: 2 of round #: 4
+  |--id: 1257161851357388800 |--date: Mon May 04 04:15:16 +0000 2020
+On status #: 3 of round #: 4
+  |--id: 1257161753042931712 |--date: Mon May 04 04:14:53 +0000 2020
+On status #: 4 of round #: 4
+  |--id: 1257161711036936194 |--date: Mon May 04 04:14:43 +0000 2020
+On status #: 5 of round #: 4
+  |--id: 1257161702950354949 |--date: Mon May 04 04:14:41 +0000 2020
+On status #: 6 of round #: 4
+  |--id: 1257161646180413440 |--date: Mon May 04 04:14:28 +0000 2020
+On status #: 7 of round #: 4
+  |--id: 1257161458065895425 |--date: Mon May 04 04:13:43 +0000 2020
+On status #: 8 of round #: 4
+  |--id: 1257160265860145152 |--date: Mon May 04 04:08:58 +0000 2020
+On status #: 9 of round #: 4
+  |--id: 1257160188173225985 |--date: Mon May 04 04:08:40 +0000 2020
+On status #: 10 of round #: 4
+  |--id: 1257159950654046208 |--date: Mon May 04 04:07:43 +0000 2020
+On status #: 11 of round #: 4
+  |--id: 1257159553042526208 |--date: Mon May 04 04:06:08 +0000 2020
+On status #: 12 of round #: 4
+  |--id: 1257156886421360640 |--date: Mon May 04 03:55:33 +0000 2020
+On status #: 13 of round #: 4
+  |--id: 1257146472744669184 |--date: Mon May 04 03:14:10 +0000 2020
+On status #: 14 of round #: 4
+  |--id: 1257136368154669056 |--date: Mon May 04 02:34:01 +0000 2020
+On status #: 15 of round #: 4
+  |--id: 1257135737507586048 |--date: Mon May 04 02:31:30 +0000 2020
+On status #: 16 of round #: 4
+  |--id: 1257131285366968321 |--date: Mon May 04 02:13:49 +0000 2020
+[MAIN RUN] Current round: 4
+[search_tweets] Request Count: 6
+On status #: 0 of round #: 5
+  |--id: 1257131285366968321 |--date: Mon May 04 02:13:49 +0000 2020
+On status #: 1 of round #: 5
+  |--id: 1257118293250306048 |--date: Mon May 04 01:22:11 +0000 2020
+On status #: 2 of round #: 5
+  |--id: 1257117084154118144 |--date: Mon May 04 01:17:23 +0000 2020
+On status #: 3 of round #: 5
+  |--id: 1257116494674026497 |--date: Mon May 04 01:15:03 +0000 2020
+On status #: 4 of round #: 5
+  |--id: 1257115705461182466 |--date: Mon May 04 01:11:54 +0000 2020
+On status #: 5 of round #: 5
+  |--id: 1257113057416949760 |--date: Mon May 04 01:01:23 +0000 2020
+On status #: 6 of round #: 5
+  |--id: 1257109761608298500 |--date: Mon May 04 00:48:17 +0000 2020
+On status #: 7 of round #: 5
+  |--id: 1257103824700862464 |--date: Mon May 04 00:24:42 +0000 2020
+On status #: 8 of round #: 5
+  |--id: 1257102923886022657 |--date: Mon May 04 00:21:07 +0000 2020
+On status #: 9 of round #: 5
+  |--id: 1257100040012615681 |--date: Mon May 04 00:09:39 +0000 2020
+On status #: 10 of round #: 5
+  |--id: 1257092539686912001 |--date: Sun May 03 23:39:51 +0000 2020
+On status #: 11 of round #: 5
+  |--id: 1257063105017733120 |--date: Sun May 03 21:42:53 +0000 2020
+On status #: 12 of round #: 5
+  |--id: 1257038849412337664 |--date: Sun May 03 20:06:31 +0000 2020
+On status #: 13 of round #: 5
+  |--id: 1257027789208694784 |--date: Sun May 03 19:22:34 +0000 2020
+On status #: 14 of round #: 5
+  |--id: 1256970906557022209 |--date: Sun May 03 15:36:32 +0000 2020
+On status #: 15 of round #: 5
+  |--id: 1256968502390317056 |--date: Sun May 03 15:26:58 +0000 2020
+On status #: 16 of round #: 5
+  |--id: 1256961473256931330 |--date: Sun May 03 14:59:03 +0000 2020
+On status #: 17 of round #: 5
+  |--id: 1256954108008976386 |--date: Sun May 03 14:29:47 +0000 2020
+On status #: 18 of round #: 5
+  |--id: 1256946260092710913 |--date: Sun May 03 13:58:35 +0000 2020
+On status #: 19 of round #: 5
+  |--id: 1256945402701443073 |--date: Sun May 03 13:55:11 +0000 2020
+On status #: 20 of round #: 5
+  |--id: 1256945319104954368 |--date: Sun May 03 13:54:51 +0000 2020
+On status #: 21 of round #: 5
+  |--id: 1256944820196696064 |--date: Sun May 03 13:52:52 +0000 2020
+On status #: 22 of round #: 5
+  |--id: 1256942193324982272 |--date: Sun May 03 13:42:26 +0000 2020
+On status #: 23 of round #: 5
+  |--id: 1256936067212640257 |--date: Sun May 03 13:18:05 +0000 2020
+On status #: 24 of round #: 5
+  |--id: 1256924665747894272 |--date: Sun May 03 12:32:47 +0000 2020
+On status #: 25 of round #: 5
+  |--id: 1256921035338690560 |--date: Sun May 03 12:18:21 +0000 2020
+On status #: 26 of round #: 5
+  |--id: 1256912679572250624 |--date: Sun May 03 11:45:09 +0000 2020
+On status #: 27 of round #: 5
+  |--id: 1256912518229811200 |--date: Sun May 03 11:44:31 +0000 2020
+On status #: 28 of round #: 5
+  |--id: 1256910393638653952 |--date: Sun May 03 11:36:04 +0000 2020
+On status #: 29 of round #: 5
+  |--id: 1256890730556952576 |--date: Sun May 03 10:17:56 +0000 2020
+On status #: 30 of round #: 5
+  |--id: 1256890663724933120 |--date: Sun May 03 10:17:40 +0000 2020
+On status #: 31 of round #: 5
+  |--id: 1256890629415555073 |--date: Sun May 03 10:17:32 +0000 2020
+On status #: 32 of round #: 5
+  |--id: 1256890108998897664 |--date: Sun May 03 10:15:28 +0000 2020
+On status #: 33 of round #: 5
+  |--id: 1256870979482955779 |--date: Sun May 03 08:59:27 +0000 2020
+On status #: 34 of round #: 5
+  |--id: 1256864468455182336 |--date: Sun May 03 08:33:35 +0000 2020
+On status #: 35 of round #: 5
+  |--id: 1256857791299563521 |--date: Sun May 03 08:07:03 +0000 2020
+On status #: 36 of round #: 5
+  |--id: 1256855512240418816 |--date: Sun May 03 07:58:00 +0000 2020
+On status #: 37 of round #: 5
+  |--id: 1256852991417577472 |--date: Sun May 03 07:47:59 +0000 2020
+On status #: 38 of round #: 5
+  |--id: 1256852357700153346 |--date: Sun May 03 07:45:27 +0000 2020
+On status #: 39 of round #: 5
+  |--id: 1256836151303798786 |--date: Sun May 03 06:41:04 +0000 2020
+On status #: 40 of round #: 5
+  |--id: 1256825909509681153 |--date: Sun May 03 06:00:22 +0000 2020
+On status #: 41 of round #: 5
+  |--id: 1256823992633012224 |--date: Sun May 03 05:52:45 +0000 2020
+On status #: 42 of round #: 5
+  |--id: 1256819729659949056 |--date: Sun May 03 05:35:48 +0000 2020
+On status #: 43 of round #: 5
+  |--id: 1256817415398162434 |--date: Sun May 03 05:26:37 +0000 2020
+On status #: 44 of round #: 5
+  |--id: 1256817390374903808 |--date: Sun May 03 05:26:31 +0000 2020
+On status #: 45 of round #: 5
+  |--id: 1256812919158792192 |--date: Sun May 03 05:08:45 +0000 2020
+On status #: 46 of round #: 5
+  |--id: 1256812028196458496 |--date: Sun May 03 05:05:12 +0000 2020
+On status #: 47 of round #: 5
+  |--id: 1256810329067016194 |--date: Sun May 03 04:58:27 +0000 2020
+On status #: 48 of round #: 5
+  |--id: 1256809978263896065 |--date: Sun May 03 04:57:03 +0000 2020
+On status #: 49 of round #: 5
+  |--id: 1256806494177091586 |--date: Sun May 03 04:43:13 +0000 2020
+On status #: 50 of round #: 5
+  |--id: 1256806356826288129 |--date: Sun May 03 04:42:40 +0000 2020
+On status #: 51 of round #: 5
+  |--id: 1256806313771720704 |--date: Sun May 03 04:42:30 +0000 2020
+On status #: 52 of round #: 5
+  |--id: 1256806222759522304 |--date: Sun May 03 04:42:08 +0000 2020
+On status #: 53 of round #: 5
+  |--id: 1256805262012198912 |--date: Sun May 03 04:38:19 +0000 2020
+On status #: 54 of round #: 5
+  |--id: 1256804571608948736 |--date: Sun May 03 04:35:34 +0000 2020
+On status #: 55 of round #: 5
+  |--id: 1256803172904865795 |--date: Sun May 03 04:30:01 +0000 2020
+On status #: 56 of round #: 5
+  |--id: 1256801933756514304 |--date: Sun May 03 04:25:05 +0000 2020
+On status #: 57 of round #: 5
+  |--id: 1256801900080447489 |--date: Sun May 03 04:24:57 +0000 2020
+On status #: 58 of round #: 5
+  |--id: 1256801877590544385 |--date: Sun May 03 04:24:52 +0000 2020
+On status #: 59 of round #: 5
+  |--id: 1256801787538890752 |--date: Sun May 03 04:24:31 +0000 2020
+On status #: 60 of round #: 5
+  |--id: 1256798908526755842 |--date: Sun May 03 04:13:04 +0000 2020
+On status #: 61 of round #: 5
+  |--id: 1256798013642518530 |--date: Sun May 03 04:09:31 +0000 2020
+On status #: 62 of round #: 5
+  |--id: 1256784310989971456 |--date: Sun May 03 03:15:04 +0000 2020
+On status #: 63 of round #: 5
+  |--id: 1256778246420434944 |--date: Sun May 03 02:50:58 +0000 2020
+On status #: 64 of round #: 5
+  |--id: 1256776631030411265 |--date: Sun May 03 02:44:33 +0000 2020
+On status #: 65 of round #: 5
+  |--id: 1256776585903931393 |--date: Sun May 03 02:44:22 +0000 2020
+On status #: 66 of round #: 5
+  |--id: 1256770962063683585 |--date: Sun May 03 02:22:01 +0000 2020
+On status #: 67 of round #: 5
+  |--id: 1256765534068248576 |--date: Sun May 03 02:00:27 +0000 2020
+On status #: 68 of round #: 5
+  |--id: 1256763257827651586 |--date: Sun May 03 01:51:24 +0000 2020
+On status #: 69 of round #: 5
+  |--id: 1256757453443588096 |--date: Sun May 03 01:28:20 +0000 2020
+On status #: 70 of round #: 5
+  |--id: 1256754015867531264 |--date: Sun May 03 01:14:41 +0000 2020
+On status #: 71 of round #: 5
+  |--id: 1256752233762287616 |--date: Sun May 03 01:07:36 +0000 2020
+On status #: 72 of round #: 5
+  |--id: 1256749938832113665 |--date: Sun May 03 00:58:29 +0000 2020
+On status #: 73 of round #: 5
+  |--id: 1256747302091276289 |--date: Sun May 03 00:48:00 +0000 2020
+On status #: 74 of round #: 5
+  |--id: 1256743805182566400 |--date: Sun May 03 00:34:06 +0000 2020
+On status #: 75 of round #: 5
+  |--id: 1256741849861025792 |--date: Sun May 03 00:26:20 +0000 2020
+On status #: 76 of round #: 5
+  |--id: 1256740182776090624 |--date: Sun May 03 00:19:43 +0000 2020
+On status #: 77 of round #: 5
+  |--id: 1256736327573352453 |--date: Sun May 03 00:04:24 +0000 2020
+[MAIN RUN] Current round: 5
+[search_tweets] Request Count: 7
+On status #: 0 of round #: 6
+  |--id: 1256736327573352453 |--date: Sun May 03 00:04:24 +0000 2020
+On status #: 1 of round #: 6
+  |--id: 1256725060015910912 |--date: Sat May 02 23:19:37 +0000 2020
+On status #: 2 of round #: 6
+  |--id: 1256722171725967361 |--date: Sat May 02 23:08:09 +0000 2020
+On status #: 3 of round #: 6
+  |--id: 1256720838239240192 |--date: Sat May 02 23:02:51 +0000 2020
+On status #: 4 of round #: 6
+  |--id: 1256720721553702914 |--date: Sat May 02 23:02:23 +0000 2020
+On status #: 5 of round #: 6
+  |--id: 1256719327463567360 |--date: Sat May 02 22:56:51 +0000 2020
+On status #: 6 of round #: 6
+  |--id: 1256706704701624321 |--date: Sat May 02 22:06:41 +0000 2020
+On status #: 7 of round #: 6
+  |--id: 1256700535685578753 |--date: Sat May 02 21:42:10 +0000 2020
+On status #: 8 of round #: 6
+  |--id: 1256664077558046721 |--date: Sat May 02 19:17:18 +0000 2020
+On status #: 9 of round #: 6
+  |--id: 1256640435264479239 |--date: Sat May 02 17:43:21 +0000 2020
+On status #: 10 of round #: 6
+  |--id: 1256618213812494336 |--date: Sat May 02 16:15:03 +0000 2020
+On status #: 11 of round #: 6
+  |--id: 1256589699646230529 |--date: Sat May 02 14:21:45 +0000 2020
+On status #: 12 of round #: 6
+  |--id: 1256571568349540353 |--date: Sat May 02 13:09:42 +0000 2020
+On status #: 13 of round #: 6
+  |--id: 1256554603149062144 |--date: Sat May 02 12:02:17 +0000 2020
+On status #: 14 of round #: 6
+  |--id: 1256554359334121472 |--date: Sat May 02 12:01:19 +0000 2020
+On status #: 15 of round #: 6
+  |--id: 1256553825294446592 |--date: Sat May 02 11:59:12 +0000 2020
+On status #: 16 of round #: 6
+  |--id: 1256553675415314432 |--date: Sat May 02 11:58:36 +0000 2020
+On status #: 17 of round #: 6
+  |--id: 1256553581815066624 |--date: Sat May 02 11:58:14 +0000 2020
+On status #: 18 of round #: 6
+  |--id: 1256552623114801152 |--date: Sat May 02 11:54:25 +0000 2020
+On status #: 19 of round #: 6
+  |--id: 1256543697350483969 |--date: Sat May 02 11:18:57 +0000 2020
+On status #: 20 of round #: 6
+  |--id: 1256543683358449669 |--date: Sat May 02 11:18:54 +0000 2020
+On status #: 21 of round #: 6
+  |--id: 1256537310381748225 |--date: Sat May 02 10:53:34 +0000 2020
+On status #: 22 of round #: 6
+  |--id: 1256536919040618496 |--date: Sat May 02 10:52:01 +0000 2020
+On status #: 23 of round #: 6
+  |--id: 1256528301608165376 |--date: Sat May 02 10:17:46 +0000 2020
+On status #: 24 of round #: 6
+  |--id: 1256524892654075905 |--date: Sat May 02 10:04:14 +0000 2020
+On status #: 25 of round #: 6
+  |--id: 1256523928039645184 |--date: Sat May 02 10:00:24 +0000 2020
+On status #: 26 of round #: 6
+  |--id: 1256520872946352128 |--date: Sat May 02 09:48:15 +0000 2020
+On status #: 27 of round #: 6
+  |--id: 1256520433249120256 |--date: Sat May 02 09:46:30 +0000 2020
+On status #: 28 of round #: 6
+  |--id: 1256518236889206784 |--date: Sat May 02 09:37:47 +0000 2020
+On status #: 29 of round #: 6
+  |--id: 1256516454956052480 |--date: Sat May 02 09:30:42 +0000 2020
+On status #: 30 of round #: 6
+  |--id: 1256511982963879939 |--date: Sat May 02 09:12:56 +0000 2020
+On status #: 31 of round #: 6
+  |--id: 1256511610094407680 |--date: Sat May 02 09:11:27 +0000 2020
+On status #: 32 of round #: 6
+  |--id: 1256509716483588096 |--date: Sat May 02 09:03:55 +0000 2020
+On status #: 33 of round #: 6
+  |--id: 1256507758511181824 |--date: Sat May 02 08:56:09 +0000 2020
+On status #: 34 of round #: 6
+  |--id: 1256502896734031872 |--date: Sat May 02 08:36:49 +0000 2020
+On status #: 35 of round #: 6
+  |--id: 1256502820435419137 |--date: Sat May 02 08:36:31 +0000 2020
+On status #: 36 of round #: 6
+  |--id: 1256502785413050370 |--date: Sat May 02 08:36:23 +0000 2020
+On status #: 37 of round #: 6
+  |--id: 1256493952561106944 |--date: Sat May 02 08:01:17 +0000 2020
+On status #: 38 of round #: 6
+  |--id: 1256487509472587776 |--date: Sat May 02 07:35:41 +0000 2020
+On status #: 39 of round #: 6
+  |--id: 1256486557940436992 |--date: Sat May 02 07:31:54 +0000 2020
+On status #: 40 of round #: 6
+  |--id: 1256484582624571392 |--date: Sat May 02 07:24:03 +0000 2020
+On status #: 41 of round #: 6
+  |--id: 1256455589783195648 |--date: Sat May 02 05:28:51 +0000 2020
+On status #: 42 of round #: 6
+  |--id: 1256454751195021312 |--date: Sat May 02 05:25:31 +0000 2020
+On status #: 43 of round #: 6
+  |--id: 1256451278743506945 |--date: Sat May 02 05:11:43 +0000 2020
+On status #: 44 of round #: 6
+  |--id: 1256451069514706944 |--date: Sat May 02 05:10:53 +0000 2020
+On status #: 45 of round #: 6
+  |--id: 1256447624133009408 |--date: Sat May 02 04:57:11 +0000 2020
+On status #: 46 of round #: 6
+  |--id: 1256445641208692736 |--date: Sat May 02 04:49:19 +0000 2020
+On status #: 47 of round #: 6
+  |--id: 1256445469900726273 |--date: Sat May 02 04:48:38 +0000 2020
+On status #: 48 of round #: 6
+  |--id: 1256441837717303296 |--date: Sat May 02 04:34:12 +0000 2020
+On status #: 49 of round #: 6
+  |--id: 1256435869373759488 |--date: Sat May 02 04:10:29 +0000 2020
+On status #: 50 of round #: 6
+  |--id: 1256435260885135362 |--date: Sat May 02 04:08:04 +0000 2020
+On status #: 51 of round #: 6
+  |--id: 1256431083052134400 |--date: Sat May 02 03:51:28 +0000 2020
+On status #: 52 of round #: 6
+  |--id: 1256429591645704192 |--date: Sat May 02 03:45:32 +0000 2020
+On status #: 53 of round #: 6
+  |--id: 1256428255298547712 |--date: Sat May 02 03:40:14 +0000 2020
+On status #: 54 of round #: 6
+  |--id: 1256427463590187010 |--date: Sat May 02 03:37:05 +0000 2020
+On status #: 55 of round #: 6
+  |--id: 1256423763974873088 |--date: Sat May 02 03:22:23 +0000 2020
+On status #: 56 of round #: 6
+  |--id: 1256423682953502721 |--date: Sat May 02 03:22:03 +0000 2020
+On status #: 57 of round #: 6
+  |--id: 1256423654432243718 |--date: Sat May 02 03:21:57 +0000 2020
+On status #: 58 of round #: 6
+  |--id: 1256422849775980545 |--date: Sat May 02 03:18:45 +0000 2020
+On status #: 59 of round #: 6
+  |--id: 1256412416818196482 |--date: Sat May 02 02:37:17 +0000 2020
+On status #: 60 of round #: 6
+  |--id: 1256404591102398464 |--date: Sat May 02 02:06:12 +0000 2020
+On status #: 61 of round #: 6
+  |--id: 1256403258052149253 |--date: Sat May 02 02:00:54 +0000 2020
+On status #: 62 of round #: 6
+  |--id: 1256399342224596992 |--date: Sat May 02 01:45:20 +0000 2020
+On status #: 63 of round #: 6
+  |--id: 1256394796731527170 |--date: Sat May 02 01:27:16 +0000 2020
+On status #: 64 of round #: 6
+  |--id: 1256391982236274689 |--date: Sat May 02 01:16:05 +0000 2020
+On status #: 65 of round #: 6
+  |--id: 1256380322024841218 |--date: Sat May 02 00:29:45 +0000 2020
+On status #: 66 of round #: 6
+  |--id: 1256373168555593730 |--date: Sat May 02 00:01:20 +0000 2020
+On status #: 67 of round #: 6
+  |--id: 1256367174450642944 |--date: Fri May 01 23:37:31 +0000 2020
+On status #: 68 of round #: 6
+  |--id: 1256366162100645889 |--date: Fri May 01 23:33:29 +0000 2020
+On status #: 69 of round #: 6
+  |--id: 1256362931584995331 |--date: Fri May 01 23:20:39 +0000 2020
+On status #: 70 of round #: 6
+  |--id: 1256361291368796160 |--date: Fri May 01 23:14:08 +0000 2020
+On status #: 71 of round #: 6
+  |--id: 1256358994882334720 |--date: Fri May 01 23:05:01 +0000 2020
+On status #: 72 of round #: 6
+  |--id: 1256354074737340416 |--date: Fri May 01 22:45:28 +0000 2020
+On status #: 73 of round #: 6
+  |--id: 1256352634350432256 |--date: Fri May 01 22:39:44 +0000 2020
+On status #: 74 of round #: 6
+  |--id: 1256345796817059841 |--date: Fri May 01 22:12:34 +0000 2020
+On status #: 75 of round #: 6
+  |--id: 1256341850060779520 |--date: Fri May 01 21:56:53 +0000 2020
+On status #: 76 of round #: 6
+  |--id: 1256312781323726850 |--date: Fri May 01 20:01:22 +0000 2020
+On status #: 77 of round #: 6
+  |--id: 1256312693679460352 |--date: Fri May 01 20:01:01 +0000 2020
+On status #: 78 of round #: 6
+  |--id: 1256312053242814464 |--date: Fri May 01 19:58:29 +0000 2020
+On status #: 79 of round #: 6
+  |--id: 1256248729423605760 |--date: Fri May 01 15:46:51 +0000 2020
+On status #: 80 of round #: 6
+  |--id: 1256224588582793222 |--date: Fri May 01 14:10:56 +0000 2020
+On status #: 81 of round #: 6
+  |--id: 1256218306614308867 |--date: Fri May 01 13:45:58 +0000 2020
+[MAIN RUN] Current round: 6
+[search_tweets] Request Count: 8
+On status #: 0 of round #: 7
+  |--id: 1256218306614308867 |--date: Fri May 01 13:45:58 +0000 2020
+On status #: 1 of round #: 7
+  |--id: 1256213615721545737 |--date: Fri May 01 13:27:19 +0000 2020
+On status #: 2 of round #: 7
+  |--id: 1256195591585103873 |--date: Fri May 01 12:15:42 +0000 2020
+On status #: 3 of round #: 7
+  |--id: 1256194848777895938 |--date: Fri May 01 12:12:45 +0000 2020
+On status #: 4 of round #: 7
+  |--id: 1256192963916427264 |--date: Fri May 01 12:05:16 +0000 2020
+On status #: 5 of round #: 7
+  |--id: 1256192128058716160 |--date: Fri May 01 12:01:56 +0000 2020
+On status #: 6 of round #: 7
+  |--id: 1256192007174668288 |--date: Fri May 01 12:01:28 +0000 2020
+On status #: 7 of round #: 7
+  |--id: 1256191707487461377 |--date: Fri May 01 12:00:16 +0000 2020
+On status #: 8 of round #: 7
+  |--id: 1256191618861789184 |--date: Fri May 01 11:59:55 +0000 2020
+On status #: 9 of round #: 7
+  |--id: 1256189718418472961 |--date: Fri May 01 11:52:22 +0000 2020
+On status #: 10 of round #: 7
+  |--id: 1256183153284182018 |--date: Fri May 01 11:26:17 +0000 2020
+On status #: 11 of round #: 7
+  |--id: 1256182790560849920 |--date: Fri May 01 11:24:50 +0000 2020
+On status #: 12 of round #: 7
+  |--id: 1256182413278892032 |--date: Fri May 01 11:23:20 +0000 2020
+On status #: 13 of round #: 7
+  |--id: 1256167585780924416 |--date: Fri May 01 10:24:25 +0000 2020
+On status #: 14 of round #: 7
+  |--id: 1256162299066191873 |--date: Fri May 01 10:03:25 +0000 2020
+On status #: 15 of round #: 7
+  |--id: 1256161824040341504 |--date: Fri May 01 10:01:31 +0000 2020
+On status #: 16 of round #: 7
+  |--id: 1256159187136139265 |--date: Fri May 01 09:51:03 +0000 2020
+On status #: 17 of round #: 7
+  |--id: 1256150650997690368 |--date: Fri May 01 09:17:08 +0000 2020
+On status #: 18 of round #: 7
+  |--id: 1256150188680294402 |--date: Fri May 01 09:15:17 +0000 2020
+On status #: 19 of round #: 7
+  |--id: 1256144139776700416 |--date: Fri May 01 08:51:15 +0000 2020
+On status #: 20 of round #: 7
+  |--id: 1256142970836807680 |--date: Fri May 01 08:46:36 +0000 2020
+On status #: 21 of round #: 7
+  |--id: 1256139626697289730 |--date: Fri May 01 08:33:19 +0000 2020
+On status #: 22 of round #: 7
+  |--id: 1256134206087852033 |--date: Fri May 01 08:11:47 +0000 2020
+On status #: 23 of round #: 7
+  |--id: 1256130242562846721 |--date: Fri May 01 07:56:02 +0000 2020
+On status #: 24 of round #: 7
+  |--id: 1256126462697943040 |--date: Fri May 01 07:41:01 +0000 2020
+On status #: 25 of round #: 7
+  |--id: 1256117796070551553 |--date: Fri May 01 07:06:34 +0000 2020
+On status #: 26 of round #: 7
+  |--id: 1256104925089730560 |--date: Fri May 01 06:15:26 +0000 2020
+On status #: 27 of round #: 7
+  |--id: 1256104804494925829 |--date: Fri May 01 06:14:57 +0000 2020
+On status #: 28 of round #: 7
+  |--id: 1256103566302994432 |--date: Fri May 01 06:10:02 +0000 2020
+On status #: 29 of round #: 7
+  |--id: 1256100156342013952 |--date: Fri May 01 05:56:29 +0000 2020
+On status #: 30 of round #: 7
+  |--id: 1256100135148204033 |--date: Fri May 01 05:56:24 +0000 2020
+On status #: 31 of round #: 7
+  |--id: 1256097097754927107 |--date: Fri May 01 05:44:19 +0000 2020
+On status #: 32 of round #: 7
+  |--id: 1256096683584139265 |--date: Fri May 01 05:42:41 +0000 2020
+On status #: 33 of round #: 7
+  |--id: 1256088105364279296 |--date: Fri May 01 05:08:35 +0000 2020
+On status #: 34 of round #: 7
+  |--id: 1256082433276952578 |--date: Fri May 01 04:46:03 +0000 2020
+On status #: 35 of round #: 7
+  |--id: 1256076873315913728 |--date: Fri May 01 04:23:58 +0000 2020
+On status #: 36 of round #: 7
+  |--id: 1256072073899765761 |--date: Fri May 01 04:04:53 +0000 2020
+On status #: 37 of round #: 7
+  |--id: 1256062074855264256 |--date: Fri May 01 03:25:09 +0000 2020
+On status #: 38 of round #: 7
+  |--id: 1256056175323312129 |--date: Fri May 01 03:01:43 +0000 2020
+On status #: 39 of round #: 7
+  |--id: 1256049747359526912 |--date: Fri May 01 02:36:10 +0000 2020
+On status #: 40 of round #: 7
+  |--id: 1256047406774226945 |--date: Fri May 01 02:26:52 +0000 2020
+On status #: 41 of round #: 7
+  |--id: 1256046861414068224 |--date: Fri May 01 02:24:42 +0000 2020
+On status #: 42 of round #: 7
+  |--id: 1256044441921564673 |--date: Fri May 01 02:15:05 +0000 2020
+On status #: 43 of round #: 7
+  |--id: 1256042109619953664 |--date: Fri May 01 02:05:49 +0000 2020
+On status #: 44 of round #: 7
+  |--id: 1256036950856708098 |--date: Fri May 01 01:45:19 +0000 2020
+On status #: 45 of round #: 7
+  |--id: 1256036316032020480 |--date: Fri May 01 01:42:48 +0000 2020
+On status #: 46 of round #: 7
+  |--id: 1256036077485211648 |--date: Fri May 01 01:41:51 +0000 2020
+On status #: 47 of round #: 7
+  |--id: 1256016566853885952 |--date: Fri May 01 00:24:19 +0000 2020
+On status #: 48 of round #: 7
+  |--id: 1256010632928694272 |--date: Fri May 01 00:00:45 +0000 2020
+On status #: 49 of round #: 7
+  |--id: 1256010096426942473 |--date: Thu Apr 30 23:58:37 +0000 2020
+On status #: 50 of round #: 7
+  |--id: 1256002120148553729 |--date: Thu Apr 30 23:26:55 +0000 2020
+On status #: 51 of round #: 7
+  |--id: 1255993876633903104 |--date: Thu Apr 30 22:54:10 +0000 2020
+On status #: 52 of round #: 7
+  |--id: 1255991856124624896 |--date: Thu Apr 30 22:46:08 +0000 2020
+On status #: 53 of round #: 7
+  |--id: 1255986888361435136 |--date: Thu Apr 30 22:26:23 +0000 2020
+On status #: 54 of round #: 7
+  |--id: 1255986555530797057 |--date: Thu Apr 30 22:25:04 +0000 2020
+On status #: 55 of round #: 7
+  |--id: 1255977524959432704 |--date: Thu Apr 30 21:49:11 +0000 2020
+On status #: 56 of round #: 7
+  |--id: 1255974952647319552 |--date: Thu Apr 30 21:38:58 +0000 2020
+On status #: 57 of round #: 7
+  |--id: 1255967176743362560 |--date: Thu Apr 30 21:08:04 +0000 2020
+On status #: 58 of round #: 7
+  |--id: 1255939269962551296 |--date: Thu Apr 30 19:17:10 +0000 2020
+On status #: 59 of round #: 7
+  |--id: 1255842756653654017 |--date: Thu Apr 30 12:53:40 +0000 2020
+On status #: 60 of round #: 7
+  |--id: 1255841295093751809 |--date: Thu Apr 30 12:47:51 +0000 2020
+On status #: 61 of round #: 7
+  |--id: 1255838408087232512 |--date: Thu Apr 30 12:36:23 +0000 2020
+On status #: 62 of round #: 7
+  |--id: 1255837225192845312 |--date: Thu Apr 30 12:31:41 +0000 2020
+On status #: 63 of round #: 7
+  |--id: 1255836480817164288 |--date: Thu Apr 30 12:28:43 +0000 2020
+On status #: 64 of round #: 7
+  |--id: 1255811793068359682 |--date: Thu Apr 30 10:50:37 +0000 2020
+On status #: 65 of round #: 7
+  |--id: 1255805728033366017 |--date: Thu Apr 30 10:26:31 +0000 2020
+On status #: 66 of round #: 7
+  |--id: 1255805677030633473 |--date: Thu Apr 30 10:26:19 +0000 2020
+On status #: 67 of round #: 7
+  |--id: 1255805595946369024 |--date: Thu Apr 30 10:26:00 +0000 2020
+On status #: 68 of round #: 7
+  |--id: 1255803252878147586 |--date: Thu Apr 30 10:16:41 +0000 2020
+On status #: 69 of round #: 7
+  |--id: 1255797755055763456 |--date: Thu Apr 30 09:54:51 +0000 2020
+On status #: 70 of round #: 7
+  |--id: 1255790192855789568 |--date: Thu Apr 30 09:24:48 +0000 2020
+On status #: 71 of round #: 7
+  |--id: 1255790147955642368 |--date: Thu Apr 30 09:24:37 +0000 2020
+On status #: 72 of round #: 7
+  |--id: 1255788509597597696 |--date: Thu Apr 30 09:18:06 +0000 2020
+On status #: 73 of round #: 7
+  |--id: 1255783902033203202 |--date: Thu Apr 30 08:59:48 +0000 2020
+On status #: 74 of round #: 7
+  |--id: 1255782761673052161 |--date: Thu Apr 30 08:55:16 +0000 2020
+On status #: 75 of round #: 7
+  |--id: 1255781677697306625 |--date: Thu Apr 30 08:50:57 +0000 2020
+[MAIN RUN] Current round: 7
+[search_tweets] Request Count: 9
+On status #: 0 of round #: 8
+  |--id: 1255781677697306625 |--date: Thu Apr 30 08:50:57 +0000 2020
+On status #: 1 of round #: 8
+  |--id: 1255781632453365761 |--date: Thu Apr 30 08:50:47 +0000 2020
+On status #: 2 of round #: 8
+  |--id: 1255778777721864194 |--date: Thu Apr 30 08:39:26 +0000 2020
+On status #: 3 of round #: 8
+  |--id: 1255777933223813120 |--date: Thu Apr 30 08:36:05 +0000 2020
+On status #: 4 of round #: 8
+  |--id: 1255776755958386688 |--date: Thu Apr 30 08:31:24 +0000 2020
+On status #: 5 of round #: 8
+  |--id: 1255776187303038977 |--date: Thu Apr 30 08:29:08 +0000 2020
+On status #: 6 of round #: 8
+  |--id: 1255775946868744194 |--date: Thu Apr 30 08:28:11 +0000 2020
+On status #: 7 of round #: 8
+  |--id: 1255775825556901891 |--date: Thu Apr 30 08:27:42 +0000 2020
+On status #: 8 of round #: 8
+  |--id: 1255775533490679810 |--date: Thu Apr 30 08:26:33 +0000 2020
+On status #: 9 of round #: 8
+  |--id: 1255775450401574912 |--date: Thu Apr 30 08:26:13 +0000 2020
+On status #: 10 of round #: 8
+  |--id: 1255775307723935744 |--date: Thu Apr 30 08:25:39 +0000 2020
+On status #: 11 of round #: 8
+  |--id: 1255775236240420864 |--date: Thu Apr 30 08:25:22 +0000 2020
+On status #: 12 of round #: 8
+  |--id: 1255769640451489792 |--date: Thu Apr 30 08:03:08 +0000 2020
+On status #: 13 of round #: 8
+  |--id: 1255765119344107520 |--date: Thu Apr 30 07:45:10 +0000 2020
+On status #: 14 of round #: 8
+  |--id: 1255764860127735808 |--date: Thu Apr 30 07:44:08 +0000 2020
+On status #: 15 of round #: 8
+  |--id: 1255764620872019968 |--date: Thu Apr 30 07:43:11 +0000 2020
+On status #: 16 of round #: 8
+  |--id: 1255751859387740161 |--date: Thu Apr 30 06:52:28 +0000 2020
+On status #: 17 of round #: 8
+  |--id: 1255738046374277120 |--date: Thu Apr 30 05:57:35 +0000 2020
+On status #: 18 of round #: 8
+  |--id: 1255736220602122241 |--date: Thu Apr 30 05:50:20 +0000 2020
+On status #: 19 of round #: 8
+  |--id: 1255735713477193729 |--date: Thu Apr 30 05:48:19 +0000 2020
+On status #: 20 of round #: 8
+  |--id: 1255733126745083904 |--date: Thu Apr 30 05:38:02 +0000 2020
+On status #: 21 of round #: 8
+  |--id: 1255727591039754240 |--date: Thu Apr 30 05:16:02 +0000 2020
+On status #: 22 of round #: 8
+  |--id: 1255717704956178432 |--date: Thu Apr 30 04:36:45 +0000 2020
+On status #: 23 of round #: 8
+  |--id: 1255714756867928064 |--date: Thu Apr 30 04:25:02 +0000 2020
+On status #: 24 of round #: 8
+  |--id: 1255711462414262272 |--date: Thu Apr 30 04:11:57 +0000 2020
+On status #: 25 of round #: 8
+  |--id: 1255711439337095168 |--date: Thu Apr 30 04:11:51 +0000 2020
+On status #: 26 of round #: 8
+  |--id: 1255711381824757760 |--date: Thu Apr 30 04:11:38 +0000 2020
+On status #: 27 of round #: 8
+  |--id: 1255711175926444032 |--date: Thu Apr 30 04:10:48 +0000 2020
+On status #: 28 of round #: 8
+  |--id: 1255709807585095680 |--date: Thu Apr 30 04:05:22 +0000 2020
+On status #: 29 of round #: 8
+  |--id: 1255699167701327872 |--date: Thu Apr 30 03:23:05 +0000 2020
+On status #: 30 of round #: 8
+  |--id: 1255697110642507777 |--date: Thu Apr 30 03:14:55 +0000 2020
+On status #: 31 of round #: 8
+  |--id: 1255684516468801536 |--date: Thu Apr 30 02:24:52 +0000 2020
+On status #: 32 of round #: 8
+  |--id: 1255679836607197189 |--date: Thu Apr 30 02:06:17 +0000 2020
+On status #: 33 of round #: 8
+  |--id: 1255678692438597632 |--date: Thu Apr 30 02:01:44 +0000 2020
+On status #: 34 of round #: 8
+  |--id: 1255677030147829760 |--date: Thu Apr 30 01:55:07 +0000 2020
+On status #: 35 of round #: 8
+  |--id: 1255665588971634688 |--date: Thu Apr 30 01:09:40 +0000 2020
+On status #: 36 of round #: 8
+  |--id: 1255641469810954240 |--date: Wed Apr 29 23:33:49 +0000 2020
+On status #: 37 of round #: 8
+  |--id: 1255637710414348288 |--date: Wed Apr 29 23:18:53 +0000 2020
+On status #: 38 of round #: 8
+  |--id: 1255623127557500928 |--date: Wed Apr 29 22:20:56 +0000 2020
+On status #: 39 of round #: 8
+  |--id: 1255622792294182913 |--date: Wed Apr 29 22:19:36 +0000 2020
+On status #: 40 of round #: 8
+  |--id: 1255617105052893185 |--date: Wed Apr 29 21:57:00 +0000 2020
+On status #: 41 of round #: 8
+  |--id: 1255615874809032704 |--date: Wed Apr 29 21:52:07 +0000 2020
+On status #: 42 of round #: 8
+  |--id: 1255615092390952961 |--date: Wed Apr 29 21:49:00 +0000 2020
+On status #: 43 of round #: 8
+  |--id: 1255614967019180033 |--date: Wed Apr 29 21:48:30 +0000 2020
+On status #: 44 of round #: 8
+  |--id: 1255610246141054978 |--date: Wed Apr 29 21:29:45 +0000 2020
+On status #: 45 of round #: 8
+  |--id: 1255603863140220929 |--date: Wed Apr 29 21:04:23 +0000 2020
+On status #: 46 of round #: 8
+  |--id: 1255603010207612930 |--date: Wed Apr 29 21:01:00 +0000 2020
+On status #: 47 of round #: 8
+  |--id: 1255575173677199360 |--date: Wed Apr 29 19:10:23 +0000 2020

@@ -24,28 +24,37 @@ if __name__ == "__main__":
   info_dict['dbname'] = "tweet_json_1"
   info_dict['query'] = "stayhome"
 
-  
-
- 
-
-  # 
+  # Step 1: Init
   queue = Queue()
   tw = TweetWorker(queue)
   cw = CouchdbWorker(queue, db_name=info_dict['dbname'])
 
-  # TWITTER.API.SEARCH
+  # Step 2: run TWITTER.API.SEARCH
   while True:
-    print('running TweetWorker')
+    print('running TweetWorker Search')
     search_flag = tw.run_search( info_dict['query'] )  # 0: normal return, 1: cannot find result 
     if search_flag == 1:
       break
 
     print('running CouchdbWorker')
     cw.run_save()
-
     time.sleep(10)
   
-  # TWITTER.API.STREAM
+  # Step 3: run TWITTER.API.STREAM
+  print('running TweetWorker Stream')
+  tw.run_stream(info_dict['query'])  # Run Streamming Async in a new thread
 
+  cw_save_failed_count = 0  # Retry 5 times. If meanwhile, nothing being put into queue, exit
+  while True:
+    if not queue.empty():
+      cw.run_save()
+      cw_save_failed_count = 0
+    else:
+      if cw_save_failed_count >= 5:
+        sys.exit(0)
+
+      cw_save_failed_count += 1
+      print("Retry {}/5,".format(cw_save_failed_count))
+      time.sleep(10)
 
 
