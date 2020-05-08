@@ -6,6 +6,8 @@ import json
 import sys
 from tweepy import OAuthHandler, API, Stream, StreamListener
 
+
+
 class MyStreamListener(StreamListener):
     def __init__(self, queue):
         super().__init__()
@@ -51,12 +53,13 @@ class TweetWorker:
         self.isIDInit = False  # Flag for tweet id check
         self.round_count = 0  # Track the search round
       
+
     def log(self, message):
-        """ Logs all operating message in to txt file.
+        """ Logs all operating message in to .out file.
             Only for Debugging use.
         """
         print(message)
-        with open("log_tweetWorker.txt", "a") as f:
+        with open("log_tweetWorker.out", "a") as f:
             f.write(message+'\n')
     
     def get_until_date(self, q, shift = 8):
@@ -80,7 +83,8 @@ class TweetWorker:
                 print(until)
                 return until
             shift -= 1
-            
+
+
     def get_oldest_tweet_id(self, q):
         ''' Get the oldest possible tweet id for query q.
             (Twitter standard -> 7-day-history)
@@ -95,6 +99,7 @@ class TweetWorker:
         print("Oldest ID: ", id)
         return id
     
+
     def get_latest_tweet_id(self, q):
         ''' Get the latest possible tweet id for query q
         '''
@@ -119,6 +124,7 @@ class TweetWorker:
         sys.exit(0)
         return None
 
+
     def search_tweets(self, q, lang="en", count=100):
         ''' 
         '''
@@ -134,19 +140,17 @@ class TweetWorker:
                       count=100,
                       max_id = self.last_min_id,
                       result_type = 'recent',
-                      geocode = "-37.827024,144.955603,45mi",  # Melbourne
+                    #   geocode = "-37.827024,144.955603,45mi",  # Melbourne
+                      geocode = "-25.909836,134.470656,1750km",  # Australia
                       lang = 'en' )
                       
         
-        # Update last_min_id for next round of search as 'max_id'.
-        self.last_min_id = result_status[-1]._json['id']
-        
+        # Update value (last_min_id - 1) for next round of search as 'max_id'.
+        if result_status:
+            self.last_min_id = result_status[-1]._json['id'] - 1 
         
         return result_status  # can be empty, []
         
-    def stream_tweets(self):
-        # TODO: search玩，可以用stream继续搜
-        return
     
     def rate_limit_handle(self, func, q):
         ''' Try to use API. Wait if rate limit reached. 
@@ -167,10 +171,12 @@ class TweetWorker:
         except tweepy.error.TweepError:
             print('\nCaught TweepError exception')
     
+
     def check_end(self):
         ''' If run_search process reaches the earlies tweet it can get, return True.
                 Then, stop run_search'''
         return
+
 
     def run_search(self, query):
         ''' This is the main run. 
@@ -200,14 +206,15 @@ class TweetWorker:
         result_status = self.rate_limit_handle(func, query)
 
         search_failed_count = 0
-        if (not result_status) and (search_failed_count <= 5):  # Retry 5 times if search failed
+        while not result_status:
             search_failed_count += 1
-            self.log("[MAIN RUN] Failed to search tweets, retry {}/5".format(search_failed_count))
-            time.sleep(30)
-            func = self.search_tweets
-            result_status = self.rate_limit_handle(func, query)
-        elif (not result_status) and (search_failed_count > 5):
-            return 1  # Flag (Cannot find result)
+            if (search_failed_count <= 5):  # Retry 5 times if search failed
+                self.log("[MAIN RUN] Failed to search tweets, retry {}/5".format(search_failed_count))
+                time.sleep(30)
+                func = self.search_tweets
+                result_status = self.rate_limit_handle(func, query)
+            else:
+                return 1  # Flag (Cannot find result)
             
             
         # Step 3: Save the status
@@ -225,22 +232,20 @@ class TweetWorker:
                 
                 self.log("  |--id: "+str(status_id) + " |--date: "+ status_date)
                 
-                # Option1: save to json <- 弃用
-#                     with open('json_cache/' + str(status_id) + '.json', 'w') as f:
-#                         json.dump(status_json, f)
-                # Option2: Save to queue
-                self.queue.put(status_json)  
+                # Option1: Save to queue
+                self.queue.put(status_json)
 
         return 0  # Flag (Result found)
+
 
     def run_stream(self, query):
         myStreamListener = MyStreamListener(self.queue)
         myStream = Stream(auth=self.auth, listener=myStreamListener)
 
-        # locations = [ -38.507844, 143.990289, -37.508239, 145.539724] # Melbourne
-        # locations = [ -37.908176, 113.554978, -12.317801, 153.534874] # Australia
-        locations = None
-        myStream.filter(track=[query], languages=['en'], is_async=True, locations=locations)
+        # locations = [ 143.990289, -38.507844, 145.539724, -37.508239 ] # Melbourne
+        locations = [ 113.554978, -37.908176, 153.534874 , -12.317801 ] # Australia
+        # locations = None
 
+        myStream.filter(track=[query], languages=['en'], is_async=True, locations=locations)
 
         return

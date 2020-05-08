@@ -21,11 +21,11 @@ class CouchdbWorker:
         self.save_count = 0  # count the number of success SAVE to db
         
     def log(self, message): 
-        """ Logs all operating message in to txt file.
+        """ Logs all operating message in to .out file.
             Only for Debugging use.
         """
         print(message)
-        with open("log_couchWorker.txt", "a") as f:
+        with open("log_couchWorker.out", "a") as f:
             f.write(message+'\n')
         
     def setup_db(self, name):

@@ -29,7 +29,7 @@ if __name__ == "__main__":
   tw = TweetWorker(queue)
   cw = CouchdbWorker(queue, db_name=info_dict['dbname'])
 
-  # Step 2: run TWITTER.API.SEARCH
+  # Step 2: run TWITTER.API.SEARCH 这个好像只能一个keyword
   while True:
     print('running TweetWorker Search')
     search_flag = tw.run_search( info_dict['query'] )  # 0: normal return, 1: cannot find result 
@@ -40,7 +40,7 @@ if __name__ == "__main__":
     cw.run_save()
     time.sleep(10)
   
-  # Step 3: run TWITTER.API.STREAM
+  # Step 3: run TWITTER.API.STREAM  这个可以list of keyword
   print('running TweetWorker Stream')
   tw.run_stream(info_dict['query'])  # Run Streamming Async in a new thread
 
