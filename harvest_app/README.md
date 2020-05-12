@@ -9,4 +9,4 @@
 3. TweetWorker.py
 
 
-*Note: 'status' and 'tweet' are used intervchangably in *.py files* 
+*Note: 'status' and 'tweet' are used intervchangably in \*.py files* 
