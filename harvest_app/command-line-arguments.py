@@ -7,8 +7,6 @@ from optparse import OptionParser
 
 ####################
 # Read Arguments
-
-
 def read_arg1():
     ''' Return the number of arguments '''
     ret = len(sys.argv)
@@ -29,10 +27,10 @@ def read_arg3():
     args = sys.argv[1:]
     return args
 
+
 #####################
 # Parse Arguments:
 # 前前后后有三个library吧：optget, optparse, argparse
-
 
 def parse_arg1():
     '''lib: optget
@@ -80,7 +78,15 @@ def parse_arg2():
        usage: test.py -i <inputfile> -o <outputfile>
        https://docs.python.org/3.3/library/argparse.html#argparse.ArgumentParser.parse_args
     '''
-    parser = argparse.ArgumentParser(description='Process some integers.')
+    
+    parser = argparse.ArgumentParser(description='DESCRIPTION: Process some integers.')
+
+# Later, calling parse_args() will return an object with two attributes, integers and accumulate. 
+# - The "integers" attribute will be a list of one or more ints, 
+# - The "accumulate" attribute will be either 
+#   - the sum() function if "--sum" was specified at the command line, or
+#   - the max() function if it was not.
+
     parser.add_argument('integers', metavar='N', type=int, nargs='+',
                     help='an integer for the accumulator')
     parser.add_argument('--sum', dest='accumulate', action='store_const',

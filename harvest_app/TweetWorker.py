@@ -36,7 +36,7 @@ class TweetWorker:
     
     
     ####
-    def __init__(self, queue):
+    def __init__(self, queue, info_dict):
         self.log('\n'*2 + "="*110)
         self.log("\n__Initialized__ @" + time.asctime(time.gmtime()) + "\n")
         self.log("="*110 + '\n'*2)
@@ -45,6 +45,10 @@ class TweetWorker:
         self.api = API(self.auth)#, wait_on_rate_limit=True, wait_on_rate_limit_notify=True) 
             # TODO: test if auto waits and resumes
         
+        # Argument-related. Contains all the query, location, etc information
+        self.info_dict = info_dict
+
+        # API related
         self.last_min_id = None
         self.last_max_id = None
         self.request_count = 0  # For fun, keep track of number of requests.
@@ -62,42 +66,42 @@ class TweetWorker:
         with open("log_tweetWorker.out", "a") as f:
             f.write(message+'\n')
     
-    def get_until_date(self, q, shift = 8):
-        ''' Get the oldest possible tweet date from now.
-                (Twitter standard -> 7-day-history -> can get tweets until 6 days ago)
-                (In fact, can actually searched 8 days ago)
-            Input: q = <'query_string'>
-                   shift = <num of days before today>
-            Return: The earliest date that API.search returns a result in "YYYY-MM-DD"
-        '''
-        today = datetime.date.today()
+    # def get_until_date(self, q, shift = 8):
+    #     ''' Get the oldest possible tweet date from now.
+    #             (Twitter standard -> 7-day-history -> can get tweets until 6 days ago)
+    #             (In fact, can actually searched 8 days ago)
+    #         Input: q = <'query_string'>
+    #                shift = <num of days before today>
+    #         Return: The earliest date that API.search returns a result in "YYYY-MM-DD"
+    #     '''
+    #     today = datetime.date.today()
         
-        while True:      
-            shift_date = time.timedelta(days = shift) 
-            until = (today - shift_date).strftime("%Y-%m-%d")
+    #     while True:      
+    #         shift_date = time.timedelta(days = shift) 
+    #         until = (today - shift_date).strftime("%Y-%m-%d")
             
-            self.request_count += 1
-            self.log("[get_until_date] Request Count: "+str(self.request_count))
+    #         self.request_count += 1
+    #         self.log("[get_until_date] Request Count: "+str(self.request_count))
             
-            if api.search(q = q, until = until, count = 1):
-                print(until)
-                return until
-            shift -= 1
+    #         if api.search(q = q, until = until, count = 1):
+    #             print(until)
+    #             return until
+    #         shift -= 1
 
 
-    def get_oldest_tweet_id(self, q):
-        ''' Get the oldest possible tweet id for query q.
-            (Twitter standard -> 7-day-history)
-        '''        
-        self.request_count += 1
-        self.log("[get_oldest_tweet_id] Request Count: "+str(self.request_count))
+    # def get_oldest_tweet_id(self, q):
+    #     ''' Get the oldest possible tweet id for query q.
+    #         (Twitter standard -> 7-day-history)
+    #     '''        
+    #     self.request_count += 1
+    #     self.log("[get_oldest_tweet_id] Request Count: "+str(self.request_count))
         
-        until = self.get_until_date(q)
-        res = self.api.search(q = q, until = until)
+    #     until = self.get_until_date(q)
+    #     res = self.api.search(q = q, until = until)
         
-        id = res[-1]._json['id']
-        print("Oldest ID: ", id)
-        return id
+    #     id = res[-1]._json['id']
+    #     print("Oldest ID: ", id)
+    #     return id
     
 
     def get_latest_tweet_id(self, q):
@@ -141,7 +145,8 @@ class TweetWorker:
                       max_id = self.last_min_id,
                       result_type = 'recent',
                     #   geocode = "-37.827024,144.955603,45mi",  # Melbourne
-                      geocode = "-25.909836,134.470656,1750km",  # Australia
+                    #   geocode = "-25.909836,134.470656,1750km",  # Australia
+                      geocode = self.info_dict['coord_location'],
                       lang = 'en' )
                       
         
@@ -172,11 +177,19 @@ class TweetWorker:
             print('\nCaught TweepError exception')
     
 
-    def check_end(self):
-        ''' If run_search process reaches the earlies tweet it can get, return True.
-                Then, stop run_search'''
-        return
+    # def check_end(self):
+    #     ''' If run_search process reaches the earlies tweet it can get, return True.
+    #             Then, stop run_search'''
+    #     return
 
+
+    #####################################################################################
+
+    def reset_search(self):
+        """ Reset isIDInit for the next query word.
+        """
+        self.isIDInit = False
+        return
 
     def run_search(self, query):
         ''' This is the main run. 
@@ -196,8 +209,7 @@ class TweetWorker:
             self.last_min_id = self.last_max_id
             self.log("[MAIN RUN] last_max_id: "+ str(self.last_max_id))
             self.isIDInit = True
-            
-            
+             
         # Step 2: Search Tweet            
         self.log("[MAIN RUN] Current round: "+str(self.round_count))
         self.round_count += 1
@@ -210,27 +222,24 @@ class TweetWorker:
             search_failed_count += 1
             if (search_failed_count <= 5):  # Retry 5 times if search failed
                 self.log("[MAIN RUN] Failed to search tweets, retry {}/5".format(search_failed_count))
-                time.sleep(30)
+                time.sleep(10)
                 func = self.search_tweets
                 result_status = self.rate_limit_handle(func, query)
             else:
                 return 1  # Flag (Cannot find result)
-            
             
         # Step 3: Save the status
         result_count = 0  # Count the number of tweets in this search result
         
         if result_status:
             for status in result_status:
-                self.log("On status #: "+str(result_count) + " of round #: "+str(self.round_count))
-                
                 result_count += 1
                 
                 status_json = status._json
                 status_id = status_json['id']
                 status_date = status_json['created_at']
-                
-                self.log("  |--id: "+str(status_id) + " |--date: "+ status_date)
+                self.log("Searching: "+query+". On tweet #: "+str(result_count) + " of round #: "+str(self.round_count)
+                        + " |--id: "+str(status_id) + " |--date: "+ status_date[4:19])
                 
                 # Option1: Save to queue
                 self.queue.put(status_json)
@@ -238,14 +247,12 @@ class TweetWorker:
         return 0  # Flag (Result found)
 
 
-    def run_stream(self, query):
+    def run_stream(self):
         myStreamListener = MyStreamListener(self.queue)
         myStream = Stream(auth=self.auth, listener=myStreamListener)
+        
+        locations = self.info_dict['box_location']
+        track = self.info_dict['query']
 
-        # locations = [ 143.990289, -38.507844, 145.539724, -37.508239 ] # Melbourne
-        locations = [ 113.554978, -37.908176, 153.534874 , -12.317801 ] # Australia
-        # locations = None
-
-        myStream.filter(track=[query], languages=['en'], is_async=True, locations=locations)
-
+        myStream.filter(track=track, languages=['en'], is_async=True, locations=locations)
         return

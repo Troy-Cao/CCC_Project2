@@ -9,13 +9,15 @@ class CouchdbWorker:
     
     
     
-    def __init__(self, queue, db_name):
+    def __init__(self, queue, info_dict):
         """ queue: TweetWorker PUT status to queue, CouchdbWorker GET and save to db
         """
         login = self.__user + ':' + self.__secret
-        url = "http://" + login + "@localhost:5984/"
+        route = "@172.26.130.241:5984/"
+        url = "http://" + login + route
         
         self.couch = couchdb.Server(url)
+        db_name=info_dict['database']
         self.db = self.setup_db(db_name)
         self.queue = queue
         self.save_count = 0  # count the number of success SAVE to db
@@ -34,13 +36,16 @@ class CouchdbWorker:
         try:
             db = self.couch[name]
         except couchdb.ResourceNotFound as e:
-            self.log("Database" + name + "is not found. Creating one instead.")
+            self.log("Database " + name + " is not found. Creating one instead.")
+            db = self.couch.create(name)
+        except:
+            self.log("Some Error??")
             db = self.couch.create(name)
         return db
     
     def save_doc(self, db, status_dict):
         ''' Save a dictionary object into database.
-            Return <document id>, <document rev>
+            Return <document id>, <document rev> if succeeded.
         '''
         try:
             status_id = status_dict['id_str']
@@ -57,9 +62,9 @@ class CouchdbWorker:
     
         return None, None
     
-    # def run_save(self): # <<<<<<<<--------- 这个是continuous running版本
-    #     """ Continuously running to save doc to db
-    #     """
+
+    # def run_save(self): # <<<-------- 这个是continuous running版本
+    #     """ Continuously running to save doc to db"""
         
     #     # IF queue is still empty after waiting for 5*15 mins, exit
     #     count = 0
@@ -76,15 +81,14 @@ class CouchdbWorker:
     #         self.log("."*40 + "waiting for TweetWorker..")
     #         time.sleep(15 * 60)
     
-    def run_save(self): # <<<<---- 这个是两种 Worker 轮流跑的版本
-        """ Continuously running to save doc to db
+
+    def run_save(self): # <<<---- 这个是两种 Worker 轮流跑的版本
+        """ Continuously running to save doc from Queue() to db, until Queue() is empty
         """
         
-        # IF queue is still empty after waiting for 5*15 mins, exit
         while True:
-          if not self.queue.empty():
-              self.log("Not empty,")
-              doc = self.queue.get()
-              self.save_doc(self.db, doc)
-              continue
-          return
+            if not self.queue.empty():
+                doc = self.queue.get()
+                self.save_doc(self.db, doc)
+                continue
+            return
