@@ -60,8 +60,9 @@ Other parameters are:
 *Note: 'status' and 'tweet' are used intervchangably in \*.py files*
 
 ---
+### [Tweet Object](https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/intro-to-tweet-json)
 
-[Rules and filtering - Building standard queries](https://developer.twitter.com/en/docs/tweets/rules-and-filtering/overview/standard-operators)
+### [Rules and filtering - Building standard queries](https://developer.twitter.com/en/docs/tweets/rules-and-filtering/overview/standard-operators)
 
 The best way to build a standard query and test if it’s valid and will return matched Tweets is to first try it at twitter.com/search. As you get a satisfactory result set, the URL loaded in the browser will contain the proper query syntax that can be reused in the standard search API endpoint. Here’s an example:
 1. We want to search for Tweets referencing @TwitterDev account. First, we run the search on twitter.com/search
@@ -74,5 +75,5 @@ e.g.
 - traffic ?	containing “traffic” and asking a question.
 - puppy filter:media	containing “puppy” and an image or video.
 
-[Filtering Tweets by location](https://developer.twitter.com/en/docs/tutorials/filtering-tweets-by-location)
+### [Filtering Tweets by location](https://developer.twitter.com/en/docs/tutorials/filtering-tweets-by-location)
 flight :(	containing “flight” and with a negative attitude.
