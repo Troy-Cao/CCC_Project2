@@ -58,3 +58,21 @@ Other parameters are:
 \*存进database的数据 id和id_str有区别。用id_str。
 
 *Note: 'status' and 'tweet' are used intervchangably in \*.py files*
+
+---
+
+[Rules and filtering - Building standard queries](https://developer.twitter.com/en/docs/tweets/rules-and-filtering/overview/standard-operators)
+
+The best way to build a standard query and test if it’s valid and will return matched Tweets is to first try it at twitter.com/search. As you get a satisfactory result set, the URL loaded in the browser will contain the proper query syntax that can be reused in the standard search API endpoint. Here’s an example:
+1. We want to search for Tweets referencing @TwitterDev account. First, we run the search on twitter.com/search
+2. Check and copy the URL loaded. In this case, we got: https://twitter.com/search?q=%40twitterdev
+3. Replace https://twitter.com/search with https://api.twitter.com/1.1/search/tweets.json and you will get: https://api.twitter.com/1.1/search/tweets.json?q=%40twitterdev
+4. Run a Twurl command to execute the search.
+
+e.g.
+- movie -scary :)	containing “movie”, but not “scary”, and with a positive attitude.
+- traffic ?	containing “traffic” and asking a question.
+- puppy filter:media	containing “puppy” and an image or video.
+
+[Filtering Tweets by location](https://developer.twitter.com/en/docs/tutorials/filtering-tweets-by-location)
+flight :(	containing “flight” and with a negative attitude.
