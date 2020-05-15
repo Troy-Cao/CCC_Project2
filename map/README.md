@@ -1,7 +1,7 @@
 ## May 15 大概整这样了
 `python test.py`
 
-~[webpage](https://github.com/Troy-Cao/CCC_Project2/blob/frontEnd/_log/v1_web.png)
+![webpage](https://github.com/Troy-Cao/CCC_Project2/blob/frontEnd/_log/v1_web.png)
 
 
 ---
