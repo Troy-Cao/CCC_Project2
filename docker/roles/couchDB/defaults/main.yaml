@@ -5,4 +5,5 @@ couchdb_dir: /data/couchdb
 
 database_user: admin
 database_password: admin
-host_name: couchdb@172.26.132.167
+host_name: couchdb@172.26.131.195
+cookie: a192aeb9904e6590849337933b000c99

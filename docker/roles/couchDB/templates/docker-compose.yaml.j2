@@ -14,5 +14,7 @@ services:
       COUCHDB_USER: {{ database_user }}
       COUCHDB_PASSWORD: {{ database_password }}
       NOOENAME: {{ host_name }}
+      COUCHDB_SECRET: {{ cookie }}
+      ERL_FLAGS: -setcookie {{ cookie }} -name {{ host_name }}
     volumes:
       - {{ couchdb_dir }}:/var/lib/couchdb

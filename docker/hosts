@@ -1,2 +1,2 @@
 [Docker]
-172.26.132.167 ansible_python_interpreter=/usr/bin/python3
+172.26.131.195 ansible_python_interpreter=/usr/bin/python3
