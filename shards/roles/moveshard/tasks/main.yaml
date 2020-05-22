@@ -1,0 +1,27 @@
+---
+- name: Enable maintanence mode
+  shell: 'curl -X PUT -H "Content-type: application/json" \
+    {{target_url}}:5984/_node/{{target_node}}/_config/couchdb/maintenance_mode \
+    -d "\"true\""'
+
+- name: Get metadata file from database
+  shell: "curl {{master_url}}:5984/_node/_local/_dbs/{{database_name}} > metadata.json"
+
+- name: Modify metatadata file
+  shell: "python modifyMetadata.py -i metadata.json -o metadata_out.json -n {{target_node}}"
+
+- name: Updating cluster metadata of database
+  shell: 'metadata=$(<metadata_out.json); \
+  curl -X PUT {{master_url}}:5984/_node/_local/_dbs/{{database_name}} -d "${metadata}"'
+
+- name: Forcing synchronization of the shards
+  shell: 'curl -X POST {{master_url}}:5984/{{database_name}}/_sync_shards'
+
+# wait shards being synchronized
+- pause:
+    minutes: 3
+
+- name: Clear the maintanence mode
+  shell: 'curl -X PUT -H "Content-type: application/json" \
+    {{target_url}}:5984/_node/{{target_node}}/_config/couchdb/maintenance_mode \
+    -d "\"false\""'

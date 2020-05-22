@@ -1,0 +1,5 @@
+---
+target_url: http://admin:admin@172.26.131.195
+target_node: couchdb@172.26.131.195
+master_url: http://admin:admin@172.26.133.166
+database_name: tweet_json_from_my_pc

@@ -1,0 +1,9 @@
+- hosts: localhost
+  vars_files:
+    - host_vars/shards.yaml
+
+  gather_facts: false
+
+
+  roles:
+    - role: moveshard
