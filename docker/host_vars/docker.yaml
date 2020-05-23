@@ -7,11 +7,10 @@ volumes:
 
 wp_dir: docker
 
-target_node: 172.26.131.195
-master_node: 172.26.133.166
+target_node: 172.26.133.125
+master_node: 172.26.130.241
 user: admin
 password: admin
 node_count: 3
 database:
-  - database_name: tweet_json_1
-  - database_name: test_db_gui
+  - database_name: one_hundred_percent_deadlocked_not_gonna_changed_name_database

@@ -16,3 +16,7 @@
     curl -X POST -H "Content-Type: application/json"
     http://{{user}}:{{password}}@{{master_node}}:5984/_cluster_setup
     -d '{"action": "finish_cluster"}'
+
+# waiting cluster finish
+- pause:
+    minutes: 2

@@ -3,9 +3,9 @@ availability_zone: melbourne-qh2-uom
 
 # Volume
 volumes:
-  - vol_name: cccProject-vol-1-1
+  - vol_name: cccProject-vol-3-1
     vol_size: 20
-  - vol_name: cccProject-vol-1-2
+  - vol_name: cccProject-vol-3-2
     vol_size: 20
 
 
@@ -23,11 +23,29 @@ security_groups:
     port_range_min: 80
     port_range_max: 80
     remote_ip_prefix: 0.0.0.0/0
+  - name: cccProject_couchdb_epmd
+    description: "Security group for couchdb communication between nodes"
+    protocol: tcp
+    port_range_min: 4369
+    port_range_max: 4369
+    remote_ip_prefix: 0.0.0.0/0
+  - name: cccProject_couchdb_nodes
+    description: "Security group for couchdb nodes"
+    protocol: tcp
+    port_range_min: 9100
+    port_range_max: 9200
+    remote_ip_prefix: 0.0.0.0/0
+  - name: cccProject_couchdb_gui
+    description: "Security group for couchdb"
+    protocol: tcp
+    port_range_min: 5984
+    port_range_max: 5984
+    remote_ip_prefix: 0.0.0.0/0
 
 # Instance
 instances:
-  - name: cccProject-1
-    volumes: ['cccProject-vol-1-1', 'cccProject-vol-1-2']
+  - name: cccProject_3
+    volumes: ['cccProject-vol-3-1', 'cccProject-vol-3-2']
 
 
 instance_image: 45225edb-66d8-4fd0-bf41-132a31a18166
