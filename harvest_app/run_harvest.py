@@ -1,6 +1,6 @@
 import time
-from TweetWorker import TweetWorker
-from CouchdbWorker import CouchdbWorker
+from tweetWorker import TweetWorker
+from couchdbWorker import CouchdbWorker
 from queue import Queue 
 import sys, getopt
 import argparse
@@ -34,7 +34,7 @@ def parse_arg(info_dict):
                           If coordinate of the location cannot be found, will use default value.")
   parser.add_argument('-lr', '--location_radius', action='store', dest='radius', default='50mi', 
                           help="Radius around the location coordinate intersted.")
-  parser.add_argument('-db', '--db_name', action='store', dest='database', default='Default_Tweets',
+  parser.add_argument('-db', '--db_name', action='store', dest='database', default='default_tweets',
                           help="default=\'Default_Tweets\'")
 
   ns = parser.parse_args()  # A Namespace object
@@ -78,7 +78,7 @@ if __name__ == "__main__":
       print("="*80, '\n    running TweetWorker Search on key: ', q,'\n',"="*80)
       search_flag = tw.run_search(q)  # 0: normal return, 1: cannot find result 
       if search_flag == 1:  # meaning: had retried 5 times, and still cannot search new tweets
-        tw.reset_search()
+        tw.reset_search()   # reset the meta info (max_id) about last search; get ready for the new query word
         break
 
       print("="*80, '\n    running CouchWorker\n',"="*80)

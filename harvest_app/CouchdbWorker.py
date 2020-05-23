@@ -63,7 +63,18 @@ class CouchdbWorker:
         return None, None
     
 
-    # def run_save(self): # <<<-------- 这个是continuous running版本
+    def run_save(self): # <<<---- 这个是两种 Worker 轮流跑的版本
+        """ Continuously running to save doc from Queue() to db, until Queue() is empty
+        """
+        
+        while True:
+            if not self.queue.empty():
+                doc = self.queue.get()
+                self.save_doc(self.db, doc)
+                continue
+            return
+
+  # def run_save(self): # <<<-------- 这个是continuous running版本
     #     """ Continuously running to save doc to db"""
         
     #     # IF queue is still empty after waiting for 5*15 mins, exit
@@ -81,14 +92,3 @@ class CouchdbWorker:
     #         self.log("."*40 + "waiting for TweetWorker..")
     #         time.sleep(15 * 60)
     
-
-    def run_save(self): # <<<---- 这个是两种 Worker 轮流跑的版本
-        """ Continuously running to save doc from Queue() to db, until Queue() is empty
-        """
-        
-        while True:
-            if not self.queue.empty():
-                doc = self.queue.get()
-                self.save_doc(self.db, doc)
-                continue
-            return

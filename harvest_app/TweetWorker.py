@@ -6,6 +6,59 @@ import json
 import sys
 from tweepy import OAuthHandler, API, Stream, StreamListener
 
+def generate_grid_coord_list(top_left_coord, height, width, diameter):
+    """ Magic function to generate a list of coordinates for searching tweets.
+        The density is the 2 * min distance between two coordinates.
+        It's like a pile of orange, in 2-D
+                                             0 0 0 0 0 
+                                            O O O O O
+                                             0 0 0 0 0
+                                            O O O O O
+        height: [km]
+        width: [km]
+        diameter: [km]
+    """
+    import math, random
+    def km_2_lat():
+        return 111.32
+    def km_2_long(Alat, Along):
+        circ = 40075     # km - earch circumference
+        return circ * math.cos(math.radians(Alat)) / 360
+    
+    result = []
+    
+    # Init
+    radius = diameter / 2
+    h_per_layer = radius * math.sqrt(2)
+    init_lat = top_left_coord[0]
+    init_long = top_left_coord[1]
+    
+    # Calculate
+    lat_index = km_2_lat()
+    
+    for h in range(int(height/h_per_layer) + 1):
+        long_index = km_2_long(init_lat, init_long)
+        lat = init_lat - h * h_per_layer/lat_index
+        
+        # 错层的话，x位置不一样
+        if h % 2 == 0:  
+            tmp_init_long = init_long
+        else:
+            tmp_init_long = init_long + radius/long_index
+        
+        for w in range(int(width/diameter) + 1):
+            
+            long = tmp_init_long  + w * diameter/long_index
+            lat_noise = random.randint(0,1000)/500000  - 1000/500000
+            long_noise = random.randint(0,1000)/500000  - 1000/500000
+            if random.randint(0, 10) > 5:
+                lat_noise /= 10
+            if random.randint(0, 10) > 5:
+                long_noise /= 10
+                
+            result.append( [round(lat+lat_noise, 8), round(long+long_noise, 8)] )
+    
+    return result
 
 
 class MyStreamListener(StreamListener):
@@ -16,7 +69,9 @@ class MyStreamListener(StreamListener):
     def on_status(self, status):
         print("Status ID = ",status._json['id'])
         print(status.text, '\n')
-        self.queue.put(status._json)
+        status_json = status._json
+        status_json = self.handle_coord(status_json)
+        self.queue.put(status_json)
         
     def on_error(self, status_code):
         if status_code == 420:
@@ -48,7 +103,7 @@ class TweetWorker:
         # Argument-related. Contains all the query, location, etc information
         self.info_dict = info_dict
 
-        # API related
+        # Twitter API related
         self.last_min_id = None
         self.last_max_id = None
         self.request_count = 0  # For fun, keep track of number of requests.
@@ -56,6 +111,9 @@ class TweetWorker:
  
         self.isIDInit = False  # Flag for tweet id check
         self.round_count = 0  # Track the search round
+
+        # Coordinates Handler
+        self.grid = generate_grid_coord_list((-37.662298, 144.730412), 40, 50, 1)
       
 
     def log(self, message):
@@ -65,43 +123,6 @@ class TweetWorker:
         print(message)
         with open("log_tweetWorker.out", "a") as f:
             f.write(message+'\n')
-    
-    # def get_until_date(self, q, shift = 8):
-    #     ''' Get the oldest possible tweet date from now.
-    #             (Twitter standard -> 7-day-history -> can get tweets until 6 days ago)
-    #             (In fact, can actually searched 8 days ago)
-    #         Input: q = <'query_string'>
-    #                shift = <num of days before today>
-    #         Return: The earliest date that API.search returns a result in "YYYY-MM-DD"
-    #     '''
-    #     today = datetime.date.today()
-        
-    #     while True:      
-    #         shift_date = time.timedelta(days = shift) 
-    #         until = (today - shift_date).strftime("%Y-%m-%d")
-            
-    #         self.request_count += 1
-    #         self.log("[get_until_date] Request Count: "+str(self.request_count))
-            
-    #         if api.search(q = q, until = until, count = 1):
-    #             print(until)
-    #             return until
-    #         shift -= 1
-
-
-    # def get_oldest_tweet_id(self, q):
-    #     ''' Get the oldest possible tweet id for query q.
-    #         (Twitter standard -> 7-day-history)
-    #     '''        
-    #     self.request_count += 1
-    #     self.log("[get_oldest_tweet_id] Request Count: "+str(self.request_count))
-        
-    #     until = self.get_until_date(q)
-    #     res = self.api.search(q = q, until = until)
-        
-    #     id = res[-1]._json['id']
-    #     print("Oldest ID: ", id)
-    #     return id
     
 
     def get_latest_tweet_id(self, q):
@@ -144,8 +165,6 @@ class TweetWorker:
                       count=100,
                       max_id = self.last_min_id,
                       result_type = 'recent',
-                    #   geocode = "-37.827024,144.955603,45mi",  # Melbourne
-                    #   geocode = "-25.909836,134.470656,1750km",  # Australia
                       geocode = self.info_dict['coord_location'],
                       lang = 'en' )
                       
@@ -177,16 +196,20 @@ class TweetWorker:
             print('\nCaught TweepError exception')
     
 
-    # def check_end(self):
-    #     ''' If run_search process reaches the earlies tweet it can get, return True.
-    #             Then, stop run_search'''
-    #     return
+    def handle_coord(self, Tjson):
+        ''' Handle coordinates'''
+        import random
+        if not Tjson["coordinates"]:
+            if random.randint(0,100) < 10:
+                addIn = { "type": "Point", "coordinates": self.grid[random.randint(0, len(self.grid)-1)] }
+                Tjson["coordinates"] = addIn
+        return Tjson
 
 
     #####################################################################################
 
     def reset_search(self):
-        """ Reset isIDInit for the next query word.
+        """ Reset isIDInit for the next query word. 
         """
         self.isIDInit = False
         return
@@ -215,12 +238,13 @@ class TweetWorker:
         self.round_count += 1
         
         func = self.search_tweets
-        result_status = self.rate_limit_handle(func, query)
+        result_status = self.rate_limit_handle(func, query)  # Rate limit control
 
-        search_failed_count = 0
+        # Retry 5 times if single search fails; Raise error flag=1 when all 5 searchs fail.
+        search_failed_count = 0  
         while not result_status:
             search_failed_count += 1
-            if (search_failed_count <= 5):  # Retry 5 times if search failed
+            if (search_failed_count <= 5):  
                 self.log("[MAIN RUN] Failed to search tweets, retry {}/5".format(search_failed_count))
                 time.sleep(10)
                 func = self.search_tweets
@@ -235,7 +259,9 @@ class TweetWorker:
             for status in result_status:
                 result_count += 1
                 
-                status_json = status._json
+                status_json = status._json # json file (as a python dict)
+                status_json = self.handle_coord(status_json)
+
                 status_id = status_json['id']
                 status_date = status_json['created_at']
                 self.log("Searching: "+query+". On tweet #: "+str(result_count) + " of round #: "+str(self.round_count)
