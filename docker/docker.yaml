@@ -6,6 +6,11 @@
 
 
   roles:
+    - role: common
+    - role: volumes
+    - role: docker
+    - role: couchdb
+    - role: cluster
     - role: moveshard
 
   environment:

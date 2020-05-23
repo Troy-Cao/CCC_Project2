@@ -12,4 +12,6 @@ master_node: 172.26.133.166
 user: admin
 password: admin
 node_count: 3
-database_name: tweet_json_from_my_pc
+database:
+  - database_name: tweet_json_1
+  - database_name: test_db_gui

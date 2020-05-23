@@ -6,24 +6,31 @@
   delegate_to: localhost
 
 - name: Get metadata file from database
-  shell: "curl http://{{user}}:{{password}}@{{master_node}}:5984/_node/_local/_dbs/{{database_name}} > metadata.json"
+  shell: >
+    curl http://{{user}}:{{password}}@{{master_node}}:5984/_node/_local/_dbs/{{item.database_name}} > metadata.json;
+    python modifyMetadata.py -i metadata.json -o metadata_out.json -n couchdb@{{target_node}};
+    metadata=$(<metadata_out.json);
+    curl -X PUT http://{{user}}:{{password}}@{{master_node}}:5984/_node/_local/_dbs/{{item.database_name}} -d "${metadata}"
   delegate_to: localhost
+  loop: '{{database}}'
 
-- pause:
-    seconds: 1
 
-- name: Modify metatadata file
-  shell: "python modifyMetadata.py -i metadata.json -o metadata_out.json -n couchdb@{{target_node}}"
-  delegate_to: localhost
+#- pause:
+#    seconds: 1
 
-- name: Updating cluster metadata of database
-  shell: 'metadata=$(<metadata_out.json); \
-  curl -X PUT http://{{user}}:{{password}}@{{master_node}}:5984/_node/_local/_dbs/{{database_name}} -d "${metadata}"'
-  delegate_to: localhost
+#- name: Modify metatadata file
+#  shell: "python modifyMetadata.py -i metadata.json -o metadata_out.json -n couchdb@{{target_node}}"
+#  delegate_to: localhost
+
+#- name: Updating cluster metadata of database
+#  shell: 'metadata=$(<metadata_out.json); \
+#  curl -X PUT http://{{user}}:{{password}}@{{master_node}}:5984/_node/_local/_dbs/{{database_name}} -d "${metadata}"'
+#  delegate_to: localhost
 
 - name: Forcing synchronization of the shards
-  shell: 'curl -X POST http://{{user}}:{{password}}@{{master_node}}:5984/{{database_name}}/_sync_shards'
+  shell: 'curl -X POST http://{{user}}:{{password}}@{{master_node}}:5984/{{item.database_name}}/_sync_shards'
   delegate_to: localhost
+  loop: '{{database}}'
 
 # wait shards being synchronized
 - pause:
