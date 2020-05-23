@@ -6,3 +6,10 @@ volumes:
     mountpoint: /data
 
 wp_dir: docker
+
+target_node: 172.26.131.195
+master_node: 172.26.133.166
+user: admin
+password: admin
+node_count: 3
+database_name: tweet_json_from_my_pc

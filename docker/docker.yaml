@@ -6,10 +6,7 @@
 
 
   roles:
-    - role: common
-    - role: volumes
-    - role: docker
-    - role: couchDB
+    - role: moveshard
 
   environment:
       http_proxy: http://wwwproxy.unimelb.edu.au:8000/
