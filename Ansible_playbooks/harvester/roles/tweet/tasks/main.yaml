@@ -1,31 +1,10 @@
 ---
-- name: Create Couchdb directory
-  tags: 'harvester'
-  become: yes
-  file:
-    path: "{{ wp_dir }}"
-    owner: "{{ ansible_user }}"
-    group: "{{ ansible_user }}"
-    recurse: yes
-    state: directory
-
-
-- name: Configure compose
-  tags: 'harvester'
-  become: yes
-  template:
-    src: docker-compose.yaml.j2
-    dest: "{{ wp_dir }}/docker-compose.yaml"
-    owner: "{{ ansible_user }}"
-    group: "{{ ansible_user }}"
-
-
 
 - name: Run harvester in docker
-  tags: harvester
   become: yes
-  docker_compose:
-    project_src: "{{ wp_dir }}"
-    pull: yes
-    state: present
-    remove_orphans: yes
+  docker_container:
+    name: "{{item.keyword}}-harvester"
+    image: whyneedaname/tweets-harvester:latest
+    auto_remove: yes
+    command: -q {{item.keyword}} -db one_hundred_percent_deadlocked_not_gonna_changed_name_database
+  loop: '{{keywords}}'
