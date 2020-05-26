@@ -1,6 +1,0 @@
----
-wp_dir: couchdb
-couchdb_dir: /data/couchdb
-
-#host_name: couchdb@172.26.131.195
-cookie: a192aeb9904e6590849337933b000c99
