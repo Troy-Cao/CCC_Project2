@@ -1,0 +1,328 @@
+{% extends "layout.html" %}
+{% block map %}
+
+<main role="main" class="container">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@900&display=swap" rel="stylesheet">
+
+    <style>
+        .bulk{
+            width: 630px;
+            float:left;
+            border: 15px solid #647888;
+            margin: 40px;
+        }
+
+        .map{
+            width: 600px;
+            height: 400px;
+        }
+
+        .title{
+            width: 600px;
+            text-align: center; 
+            padding:0;
+       }
+
+        p{
+          font-family: 'Roboto', sans-serif;
+          color:#222121;
+          font-size:larger; 
+          margin: 20px;
+          padding:0;
+          /*text-align:center;*/
+        }
+
+        .info{
+            padding: 6px 8px;
+            font: 14px/16px Arial, Helvetica, sans-serif;
+            background: white;
+            background: rgba(255,255,255,0.8);
+            box-shadow:0 0 15px rgba(0,0,0,0.2);
+            border-radius: 5px;
+        }
+        
+        .info h6{
+            margin: 0 0 5px;
+            color:#777;
+        }
+        .legend {
+            line-height: 18px;
+            color: #555;}
+
+        .legend i {
+            width: 18px;
+            height: 18px;
+            float: left;
+            margin-right: 8px;
+            opacity: 0.7;
+        }
+    </style>
+
+</head>
+<body>
+
+<!--Map 1-->
+<div class = "bulk">
+    <div id = "mapid-1" class = "map" ></div>
+
+    <script src="../static/Melbourne.js"></script>
+
+    <script>
+    var mymap = L.map('mapid-1').setView([-37.813, 144.963], 12); //Create mymap
+    // BY edit: /////////////////////////////////////////////////////////////        
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            colorinfo = JSON.parse(this.responseText);
+            console.log(colorinfo);
+            showMap(colorinfo);
+        }
+    };
+
+    xmlhttp.open("GET", "http://127.0.0.1:5000/data/result/2", true);
+    xmlhttp.send();
+
+    function color1(index) {
+        return index > 0.9 ? '#800026':
+               index > 0.8 ? '#bd0026':
+               index > 0.7 ? '#e31a1c':
+               index > 0.6 ? '#fc4e2a':
+               index > 0.5 ? '#fd8d3c':
+               index > 0.4 ? '#feb24c':
+               index > 0.3 ? '#fed976':
+               index > 0.2 ? '#ffeda0':
+               index > 0.1 ? '#ffffcc':
+                                '#fff';
+    }
+
+    //Style for each suburb block
+    function style1(feature) {
+        return {
+            fillColor:color1(colorinfo[feature.properties.vic_loca_2]),
+            weight: 2,
+            opacity: 2,
+            color: 'white',
+            dashArray: '3',
+            fillOpacity: 0.7
+        };
+    }
+
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        maxZoom: 18,
+        id: 'mapbox/light-v10',
+        tileSize: 512,
+        zoomOffset: -1,
+        accessToken: 'pk.eyJ1IjoieWlyYW4tMDkyMCIsImEiOiJjazl3M3U2aW4wNjExM2VxamFmOGs3Y3BzIn0.ZBCLzhsw_OGiNk6-3V0uQQ'
+    }).addTo(mymap);
+
+    // BY edit: /////////////////////////////////////////////////////////////
+    var info = L.control();
+
+    function showMap(colorinfo){
+        info.onAdd = function(map) {
+            this._div = L.DomUtil.create('div','info'); //Create a div with class info
+            this.update(); //This method replaces the content of the element with the provided newContent argument and returns the element
+            return this._div;
+        };
+
+        function onEachFeature1 (feature,layer) {
+            layer.bindPopup(feature.properties.vic_loca_2); 
+            layer.on({
+                mouseover:highlightFeature,
+                mouseout:resetHighlight,
+                });//.on() method attaches event handlers to the currently selected set of elements
+        }
+
+        function resetHighlight(e){
+            geojsonLayer.resetStyle(e.target);
+            info.update();
+        };
+
+        function highlightFeature(e){
+            var layer = e.target; // returns the element that triggered the event;
+            layer.setStyle({
+                weight:5,
+                color:'#00847d',
+                dashArray:'',
+                fillOpacity:0.7
+            });
+            if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+                layer.bringToFront(); 
+            };
+                info.update(layer.feature.properties);
+        };
+            // method that we will use to update the control based on feature properties passed
+        info.update = function(props){
+            this._div.innerHTML = '<h6>Suburb information</h6>' + 
+            (props ? '<b>' + props.vic_loca_2 + '</b><br />'+'Satisfaction: '+colorinfo[props.vic_loca_2]:'Hover over a suburb');
+        };
+
+        info.addTo(mymap);
+
+        var geojsonLayer = L.geoJSON(Melbourne,{style: style1, onEachFeature: onEachFeature1});
+
+        geojsonLayer.addTo(mymap);
+
+        var legend = L.control({position: 'bottomright'});
+        legend.onAdd = function (map) {
+
+            var div = L.DomUtil.create('div', 'info legend'),
+            grades = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9],
+            labels = [],
+            from,to;
+
+            for (var i = 0; i < grades.length; i++) {
+                from = grades[i];
+                to = grades[i+1];
+                labels.push (
+                    '<i style = "background:'+color1(from+0.01)+'"></i>'+
+                    from + (to ?  '&ndash;'+ to : '+'));
+            }
+            div.innerHTML = labels.join('<br>');
+            return div;
+        };
+
+        legend.addTo(mymap);
+    };
+   </script>
+
+   <div class = "title"><p>People's satisfaction towards lockdown</p></div>
+</div>
+
+<div class = "bulk">
+    <div id = "mapid-2" class = "map" ></div>
+
+    <script src="../static/Melbourne.js"></script>
+
+    <script>
+    var mymap2 = L.map('mapid-2').setView([-37.813, 144.963], 12); //Create mymap
+    // BY edit: /////////////////////////////////////////////////////////////        
+    var xmlhttp2 = new XMLHttpRequest();
+    xmlhttp2.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            colorinfo2 = JSON.parse(this.responseText);
+            console.log(colorinfo2);
+            showMap2(colorinfo2);
+        }
+    };
+
+    //Change here to get another data
+    xmlhttp2.open("GET", "http://127.0.0.1:5000/data/result/income", true);
+    xmlhttp2.send();
+
+    //Change here for second map
+    function color2(index) {
+        return index > 3000 ? '#bd0026':
+               index > 2500 ? '#f03b20':
+               index > 2000 ? '#fd8d3c':
+               index > 1500 ? '#feb24c':
+               index > 1000 ? '#fed976':
+                              '#ffffb2';
+    }
+
+    //Style for each suburb block
+    function style2(feature) {
+        return {
+            fillColor:color2(colorinfo2[feature.properties.vic_loca_2]),
+            weight: 2,
+            opacity: 2,
+            color: 'white',
+            dashArray: '3',
+            fillOpacity: 0.7
+        };
+    }
+
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        maxZoom: 18,
+        id: 'mapbox/light-v10',
+        tileSize: 512,
+        zoomOffset: -1,
+        accessToken: 'pk.eyJ1IjoieWlyYW4tMDkyMCIsImEiOiJjazl3M3U2aW4wNjExM2VxamFmOGs3Y3BzIn0.ZBCLzhsw_OGiNk6-3V0uQQ'
+    }).addTo(mymap2);
+
+    // BY edit: /////////////////////////////////////////////////////////////
+    var info2 = L.control();
+
+    function showMap2(colorinfo2){
+        info2.onAdd = function(map) {
+            this._div = L.DomUtil.create('div','info'); //Create a div with class info
+            this.update(); //This method replaces the content of the element with the provided newContent argument and returns the element
+            return this._div;
+        };
+
+        function onEachFeature2 (feature,layer) {
+            layer.bindPopup(feature.properties.vic_loca_2); 
+            layer.on({
+                mouseover:highlightFeature2,
+                mouseout:resetHighlight2,
+                });//.on() method attaches event handlers to the currently selected set of elements
+        }
+
+        function resetHighlight2(e){
+            geojsonLayer2.resetStyle(e.target);
+            info2.update();
+        };
+
+        function highlightFeature2(e){
+            var layer = e.target; // returns the element that triggered the event;
+            layer.setStyle({
+                weight:5,
+                color:'#00847d',
+                dashArray:'',
+                fillOpacity:0.7
+            });
+            if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+                layer.bringToFront(); 
+            };
+                info2.update(layer.feature.properties);
+        };
+            // method that we will use to update the control based on feature properties passed
+        info2.update = function(props){
+            this._div.innerHTML = '<h6>Suburb information</h6>' + 
+            (props ? '<b>' + props.vic_loca_2 + '</b><br />'+'Average income(dollars): '+colorinfo2[props.vic_loca_2]:'Hover over a suburb');
+        };
+
+        info2.addTo(mymap2);
+
+        var geojsonLayer2 = L.geoJSON(Melbourne,{style: style2, onEachFeature: onEachFeature2});
+
+        geojsonLayer2.addTo(mymap2);
+
+        var legend = L.control({position: 'bottomright'});
+        legend.onAdd = function (map) {
+            var div = L.DomUtil.create('div', 'info legend'),
+            grades = [0, 1000, 1500, 2000, 2500, 3000],
+            labels = [],
+            from,to;
+
+            for (var i = 0; i < grades.length; i++) {
+                from = grades[i];
+                to = grades[i+1];
+                labels.push (
+                    '<i style = "background:'+color2(from+1)+'"></i>'+
+                    from + (to ?  '&ndash;'+ to : '+'));
+            }
+            div.innerHTML = labels.join('<br>');
+            return div;
+        };
+
+        legend.addTo(mymap2);
+
+    };
+   </script>
+
+   <div class = "title"> <p>Scenario2: Average income per family per week(dollars)</p></div>
+</div>
+
+{% endblock map %}

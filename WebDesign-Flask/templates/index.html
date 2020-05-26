@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block map %}
+<main role="main" class="container">
+	<div class="row">
+		<div class="col-md-8">
+			<article class="media content-section">
+				<div class="media-body">
+					<div class="article-metadata">
+						<h1> Scenario I: Age Group </h1>
+					</div>
+					<p class="article-content">In this scenario we try to find the relationship between the sentiment feedback and the proportion of people aged under 64 in different suburbs. The data is retrieved from the 2016 release of the Victoria in Future and Estimated Resident Population(ERP) for the state of Victoria.
+					We can infer that yong groups are sensitive to the lockdown pilicy, as their lives are more likely to be influenced by the restriction.</p>
+				
+				</div>
+			</article>
+		
+			<article class="media content-section">
+				<div class="media-body">
+					<div class="article-metadata">
+						<h1> Scenario II: Income </h1>
+					</div>
+					<p class="article-content">In this scenario we try to find the relationship between the sentiment feedback and people's weekly household income. The data is retrieved from the Australian Bureau of Statistics. 
+					Generally, the higher the income, the lower the degree that people suffer from the restriction policy. Therefore, the setiment feedback is more likely to be positive for these people. </p>
+				
+				</div>
+			</article>
+		
+			<article class="media content-section">
+				<div class="media-body">
+					<div class="article-metadata">
+						<h1> Scenario III: Business Structure </h1>
+					</div>
+					<p class="article-content">In this scenario we try to find the relationship between sentiment feedback and the proportion of hospitals/restaurants to all facilities. The data is retrieved from "City of Melbourne CLUE Business Establishment by ANZSIC Industries(Block) 2017".
+					More negative feedback is observed in places where there are more restaurants and healthcare falicities. </p>
+				
+				</div>
+			</article>
+		</div>
+	</div>	
+</main>
+	
+	
+{% endblock map %}
