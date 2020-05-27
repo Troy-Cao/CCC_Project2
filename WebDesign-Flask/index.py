@@ -1,3 +1,9 @@
+# Group-60
+# Di Cao 963908,
+# Yannan Gao 1015229
+# Boyang Zhang 1069342
+# Chenqin Zhang 733301
+# Yiran Zhang 966673
 from flask import Flask, render_template
 import couchdb
 
@@ -9,17 +15,17 @@ db = couch['result']
 # Route - The Main Page
 @app.route("/")
 @app.route("/index")
-def index(): 
-    
+def index():
+
     return render_template("index.html")
 
 
 # Route - Senerios
 @app.route("/scenario1/<number>")
 def senario1(number):
-    # file_name = 
+    # file_name =
     return render_template("scenario1.html")#, senario_id=number)
-    
+
 @app.route("/scenario2/<number>")
 def senario2(number):
 
